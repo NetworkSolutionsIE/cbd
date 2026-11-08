@@ -159,18 +159,6 @@ function ContactFormContent() {
               </span>
             </div>
             <div className="flex items-center gap-2.5">
-              <Mail className="h-4 w-4 text-[#9a7b38]" />
-              <span>
-                <strong>Workshops &amp; Retreats:</strong>{" "}
-                <a
-                  href={`mailto:${site.workshopEmail}`}
-                  className="underline hover:text-[#9a7b38]"
-                >
-                  {site.workshopEmail}
-                </a>
-              </span>
-            </div>
-            <div className="flex items-center gap-2.5">
               <Phone className="h-4 w-4 text-[#9a7b38]" />
               <span>
                 <strong>Student Courses (Text / WhatsApp):</strong>{" "}

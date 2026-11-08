@@ -185,11 +185,7 @@ export async function POST(request: Request) {
     }
 
     const site = getSiteData();
-    const lowerSubject = `${category} ${subject}`.toLowerCase();
-    const recipientEmail =
-      lowerSubject.includes("workshop") || lowerSubject.includes("retreat")
-        ? site.workshopEmail
-        : site.email;
+    const recipientEmail = site.email || "clodaghberesford@yahoo.com";
 
     // 1. Send email notification if RESEND_API_KEY is set in Next.js or Convex
     let emailSent = await sendEmailViaResend({
@@ -351,3 +347,4 @@ export async function DELETE(request: Request) {
     );
   }
 }
+

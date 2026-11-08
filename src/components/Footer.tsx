@@ -98,15 +98,6 @@ export default function Footer() {
                 </a>
               </p>
               <p className="text-xs text-stone-600">
-                Workshops &amp; Retreats:{" "}
-                <a
-                  href={`mailto:${site.workshopEmail}`}
-                  className="hover:text-stone-950 hover:underline"
-                >
-                  {site.workshopEmail}
-                </a>
-              </p>
-              <p className="text-xs text-stone-600">
                 Location: {site.location}
               </p>
               <div className="pt-3">
