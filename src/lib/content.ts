@@ -109,3 +109,72 @@ export const getGiftCategoryBySlug = (slug: string): GiftCategory | undefined =>
 
 export const getSiteData = () => siteData;
 
+export interface PurchasableCatalogItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  categoryTitle: string;
+  itemType: "course" | "gift";
+  priceDisplay: string;
+  unitPriceEur: number;
+  allowCustomAmount?: boolean;
+  allowPoemChoice?: boolean;
+}
+
+export function parsePriceEur(priceStr: string): number | null {
+  if (!priceStr) return null;
+  const match = priceStr.match(/€\s*(\d+(?:\.\d{1,2})?)/);
+  if (!match) return null;
+  const val = parseFloat(match[1]);
+  return Number.isFinite(val) && val > 0 ? val : null;
+}
+
+export function getAllPurchasableItems(): PurchasableCatalogItem[] {
+  const results: PurchasableCatalogItem[] = [];
+
+  for (const cat of getOfferingCategories()) {
+    for (const item of cat.items) {
+      const priceNum = parsePriceEur(item.advert.price);
+      if (priceNum !== null) {
+        results.push({
+          id: item.id,
+          title: item.title,
+          subtitle: `${item.advert.date} • ${item.advert.venue}`,
+          categoryTitle: cat.title,
+          itemType: "course",
+          priceDisplay: item.advert.price,
+          unitPriceEur: priceNum,
+        });
+      }
+    }
+  }
+
+  for (const cat of getGiftCategories()) {
+    for (const item of cat.items) {
+      const priceNum = parsePriceEur(item.price);
+      if (priceNum !== null) {
+        const lowerTitle = item.title.toLowerCase();
+        results.push({
+          id: item.id,
+          title: item.title,
+          subtitle: item.subtitle,
+          categoryTitle: cat.categoryTitle,
+          itemType: "gift",
+          priceDisplay: item.price,
+          unitPriceEur: priceNum,
+          allowCustomAmount:
+            item.id === "gift-token-custom-amount" ||
+            item.price.toLowerCase().includes("from"),
+          allowPoemChoice:
+            lowerTitle.includes("choice of poem") ||
+            item.id === "framed-custom-choice" ||
+            item.id === "broadside-cordgrass-or-choice",
+        });
+      }
+    }
+  }
+
+  return results;
+}
+
+

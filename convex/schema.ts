@@ -20,5 +20,34 @@ export default defineSchema({
     emailSent: v.boolean(),
     createdAt: v.string(),
   }).index("by_createdAt", ["createdAt"]),
+
+  orders: defineTable({
+    itemId: v.string(),
+    itemTitle: v.string(),
+    itemType: v.union(v.literal("course"), v.literal("gift")),
+    unitPriceEur: v.number(),
+    quantity: v.number(),
+    totalEur: v.number(),
+    customerName: v.string(),
+    customerEmail: v.string(),
+    customerPhone: v.optional(v.string()),
+    shippingAddress: v.optional(v.string()),
+    poemChoice: v.optional(v.string()),
+    dedicationNotes: v.optional(v.string()),
+    paypalOrderId: v.optional(v.string()),
+    paypalReceiverEmail: v.string(),
+    paymentMethod: v.union(
+      v.literal("paypal_sdk"),
+      v.literal("paypal_standard")
+    ),
+    status: v.union(
+      v.literal("pending_payment"),
+      v.literal("paid"),
+      v.literal("fulfilled"),
+      v.literal("cancelled")
+    ),
+    createdAt: v.string(),
+  }).index("by_createdAt", ["createdAt"]),
 });
+
 

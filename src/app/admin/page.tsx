@@ -15,6 +15,7 @@ import {
   Mail,
   Phone,
   RefreshCw,
+  CreditCard,
 } from "lucide-react";
 import {
   getOfferingCategories,
@@ -26,10 +27,11 @@ import {
   Poem,
 } from "@/lib/content";
 import type { SubmissionRecord } from "@/app/api/submissions/route";
+import type { OrderRecord } from "@/app/api/orders/route";
 
 export default function AdminStudioPage() {
   const [activeTab, setActiveTab] = useState<
-    "inbox" | "offerings" | "gifts" | "poems" | "events"
+    "inbox" | "orders" | "offerings" | "gifts" | "poems" | "events"
   >("inbox");
 
   // Submissions Inbox State
@@ -39,6 +41,10 @@ export default function AdminStudioPage() {
   const [statusFilter, setStatusFilter] = useState<
     "all" | "new" | "read" | "replied" | "archived"
   >("all");
+
+  // PayPal Orders State
+  const [orders, setOrders] = useState<OrderRecord[]>([]);
+  const [loadingOrders, setLoadingOrders] = useState(true);
 
   const [offerings, setOfferings] = useState<OfferingCategory[]>(() =>
     getOfferingCategories()
@@ -71,9 +77,46 @@ export default function AdminStudioPage() {
     }
   }, []);
 
+  const fetchOrders = useCallback(async () => {
+    setLoadingOrders(true);
+    try {
+      const res = await fetch("/api/orders");
+      if (res.ok) {
+        const data = await res.json();
+        setOrders(data.items || []);
+      }
+    } catch {
+      // ignore
+    } finally {
+      setLoadingOrders(false);
+    }
+  }, []);
+
   useEffect(() => {
     fetchSubmissions();
-  }, [fetchSubmissions]);
+    fetchOrders();
+  }, [fetchSubmissions, fetchOrders]);
+
+  const handleUpdateOrderStatus = async (
+    id: string,
+    status: OrderRecord["status"]
+  ) => {
+    setOrders((prev) =>
+      prev.map((o) => (o._id === id ? { ...o, status } : o))
+    );
+    await fetch("/api/orders", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, status }),
+    });
+  };
+
+  const handleDeleteOrder = async (id: string) => {
+    setOrders((prev) => prev.filter((o) => o._id !== id));
+    await fetch(`/api/orders?id=${encodeURIComponent(id)}`, {
+      method: "DELETE",
+    });
+  };
 
   const handleUpdateSubmissionStatus = async (
     id: string,
@@ -280,6 +323,19 @@ export default function AdminStudioPage() {
               {newCount} new
             </span>
           )}
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setActiveTab("orders")}
+          className={`inline-flex items-center gap-2 rounded-full px-5 py-2 font-sans text-xs font-bold uppercase tracking-widest transition ${
+            activeTab === "orders"
+              ? "bg-[#0070ba] text-white"
+              : "border border-stone-300 bg-white text-stone-700 hover:border-stone-800"
+          }`}
+        >
+          <CreditCard className="h-3.5 w-3.5" />
+          <span>PayPal Orders ({orders.length})</span>
         </button>
 
         <button
@@ -517,6 +573,153 @@ export default function AdminStudioPage() {
 
                   <div className="mt-4 whitespace-pre-wrap rounded-xs border-l-4 border-[#9a7b38] bg-stone-50 p-4 text-base leading-relaxed text-stone-900">
                     {sub.message}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* TAB 0B: PAYPAL ORDERS (Backed by Convex) */}
+      {activeTab === "orders" && (
+        <div className="mt-8 space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <p className="text-sm text-stone-700">
+              All course bookings, framed poem purchases, broadsides, and gift
+              tokens initiated via{" "}
+              <a href="/checkout" className="font-semibold underline">
+                /checkout
+              </a>{" "}
+              (PayPal Receiver: <strong>clodaghberesford@yahoo.com</strong>).
+            </p>
+            <button
+              type="button"
+              onClick={fetchOrders}
+              className="inline-flex items-center gap-1.5 rounded-full border border-stone-400 bg-white px-4 py-1.5 font-sans text-xs font-semibold text-stone-800 hover:bg-stone-100"
+            >
+              <RefreshCw
+                className={`h-3.5 w-3.5 ${loadingOrders ? "animate-spin" : ""}`}
+              />
+              <span>Refresh Orders</span>
+            </button>
+          </div>
+
+          {orders.length === 0 ? (
+            <div className="rounded-sm border border-stone-300 bg-white p-12 text-center">
+              <CreditCard className="mx-auto h-10 w-10 text-stone-400" />
+              <h3 className="mt-3 text-2xl font-semibold text-stone-900">
+                No PayPal orders yet
+              </h3>
+              <p className="mt-1 text-sm text-stone-600">
+                When customers click “Book &amp; Pay” or “Buy Now with PayPal”
+                on Courses or Gifts, their orders appear here.
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {orders.map((ord) => (
+                <div
+                  key={ord._id}
+                  className="rounded-sm border border-stone-300 bg-white p-6 shadow-xs"
+                >
+                  <div className="flex flex-wrap items-start justify-between gap-4 border-b border-stone-100 pb-4">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span
+                          className={`rounded-xs px-2.5 py-0.5 font-sans text-[10px] font-bold uppercase tracking-widest ${
+                            ord.status === "paid" || ord.status === "fulfilled"
+                              ? "bg-emerald-700 text-white"
+                              : ord.status === "cancelled"
+                              ? "bg-red-700 text-white"
+                              : "bg-amber-600 text-white"
+                          }`}
+                        >
+                          {ord.status.replace("_", " ")}
+                        </span>
+                        <span className="rounded-xs bg-[#e8f2fa] px-2.5 py-0.5 font-sans text-[10px] font-bold uppercase tracking-wider text-[#005ea6]">
+                          €{ord.totalEur.toFixed(2)} EUR (×{ord.quantity})
+                        </span>
+                        <span className="font-sans text-xs text-stone-500">
+                          {new Date(ord.createdAt).toLocaleString("en-IE")}
+                        </span>
+                      </div>
+
+                      <h3 className="mt-2 text-2xl font-semibold text-stone-950">
+                        {ord.itemTitle}
+                      </h3>
+                      {ord.poemChoice && (
+                        <p className="text-sm italic text-[#9a7b38]">
+                          Selected Poem: ‘{ord.poemChoice}’
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2">
+                      <select
+                        value={ord.status}
+                        onChange={(e) =>
+                          handleUpdateOrderStatus(
+                            ord._id,
+                            e.target.value as OrderRecord["status"]
+                          )
+                        }
+                        className="rounded-xs border border-stone-300 bg-white px-2.5 py-1.5 font-sans text-xs font-semibold uppercase text-stone-800"
+                      >
+                        <option value="pending_payment">Pending Payment</option>
+                        <option value="paid">Paid</option>
+                        <option value="fulfilled">Fulfilled / Dispatched</option>
+                        <option value="cancelled">Cancelled</option>
+                      </select>
+
+                      <a
+                        href={`mailto:${ord.customerEmail}?subject=${encodeURIComponent(
+                          `Your Order: ${ord.itemTitle}`
+                        )}&body=${encodeURIComponent(
+                          `Dear ${ord.customerName},\n\nThank you very much for your order of "${ord.itemTitle}" (€${ord.totalEur.toFixed(
+                            2
+                          )} EUR).\n\nWarm regards,\nClodagh Beresford Dunne`
+                        )}`}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-stone-950 px-4 py-1.5 font-sans text-xs font-bold uppercase tracking-wider text-white hover:bg-[#9a7b38]"
+                      >
+                        <Mail className="h-3.5 w-3.5" />
+                        <span>Email Buyer</span>
+                      </a>
+
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteOrder(ord._id)}
+                        className="rounded-xs p-1.5 text-stone-400 hover:bg-red-50 hover:text-red-700"
+                        title="Delete order"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 grid grid-cols-1 gap-4 font-sans text-xs text-stone-700 sm:grid-cols-3">
+                    <div>
+                      <strong>Customer:</strong> {ord.customerName} (
+                      <a
+                        href={`mailto:${ord.customerEmail}`}
+                        className="underline"
+                      >
+                        {ord.customerEmail}
+                      </a>
+                      )
+                      {ord.customerPhone ? ` • ${ord.customerPhone}` : ""}
+                    </div>
+                    {ord.shippingAddress && (
+                      <div>
+                        <strong>Delivery Address:</strong> {ord.shippingAddress}
+                      </div>
+                    )}
+                    {ord.dedicationNotes && (
+                      <div>
+                        <strong>Dedication / Notes:</strong>{" "}
+                        {ord.dedicationNotes}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

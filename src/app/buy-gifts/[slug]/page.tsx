@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, CheckCircle2, Gift, BookOpen } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, Gift, BookOpen, CreditCard } from "lucide-react";
 import { getGiftCategories, getGiftCategoryBySlug } from "@/lib/content";
 
 export async function generateStaticParams() {
@@ -122,14 +122,22 @@ export default async function GiftCategoryPage({
 
             <div className="mt-8 space-y-2.5 border-t border-stone-200 pt-5">
               <Link
+                href={`/checkout?item=${encodeURIComponent(item.id)}`}
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#0070ba] px-5 py-3 font-sans text-xs font-bold uppercase tracking-widest text-white transition hover:bg-[#003087]"
+              >
+                <CreditCard className="h-3.5 w-3.5" />
+                <span>Buy Now with PayPal ({item.price})</span>
+              </Link>
+
+              <Link
                 href={`/contact?subject=${encodeURIComponent(
                   `Order / Purchase Enquiry: ${item.title}`
                 )}&offering=${encodeURIComponent(
                   `${item.title} (${item.price})`
                 )}`}
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-stone-950 px-5 py-3 font-sans text-xs font-bold uppercase tracking-widest text-white transition hover:bg-[#9a7b38]"
+                className="flex w-full items-center justify-center gap-2 rounded-full border border-stone-300 bg-white px-5 py-2.5 font-sans text-xs font-bold uppercase tracking-widest text-stone-800 transition hover:border-stone-900 hover:bg-stone-50"
               >
-                <span>Order / Enquire Now</span>
+                <span>Ask a Question / Enquire</span>
                 <ArrowRight className="h-3.5 w-3.5" />
               </Link>
 
