@@ -131,7 +131,12 @@ export const sendEmailNotification = action({
       }),
     });
 
-    return { sent: response.ok, status: response.status };
+    const details = await response.text();
+    if (!response.ok) {
+      console.error("Resend API error:", response.status, details);
+    }
+
+    return { sent: response.ok, status: response.status, details };
   },
 });
 
