@@ -91,6 +91,12 @@
   ],
   "gallery": [
     {
+      "id": "david-cohen-trophy",
+      "src": "/images/gallery/david-cohen-prize-trophy.jpg",
+      "title": "Edna O’Brien DBE & Clodagh Beresford Dunne — Clarissa Luard Award",
+      "caption": "Edna O’Brien DBE and Clodagh Beresford Dunne holding the Arts Council of England’s Clarissa Luard Emerging Writer Award at the David Cohen Prize for Literature, London."
+    },
+    {
       "id": "edna-obrien",
       "src": "/images/gallery/edna-obrien.jpg",
       "title": "Clarissa Luard Award Presentation, Florence Hall, London",

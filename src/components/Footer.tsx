@@ -18,12 +18,24 @@ export default function Footer() {
             <p className="mt-1 text-sm italic text-[#9a7b38]">{site.tagline}</p>
 
             <div className="mt-6">
-              <p className="text-xs text-stone-600 mb-2">Kindly supported by</p>
-              <img
-                src="/images/site/sponsors.jpg"
-                alt="Kindly supported by Cultúr Éireann / Culture Ireland, The Arts Council / An Chomhairle Ealaíon, and ArtLinks"
-                className="h-12 w-auto rounded-xs border border-stone-200/80 bg-white p-1 shadow-2xs"
-              />
+              <p className="text-xs text-stone-600 mb-3">Kindly supported by</p>
+              <div className="flex flex-wrap items-center gap-4">
+                <img
+                  src="/images/site/ci-logo.png"
+                  alt="Cultúr Éireann / Culture Ireland"
+                  className="h-10 w-auto object-contain"
+                />
+                <img
+                  src="/images/site/arts-council-logo.png"
+                  alt="The Arts Council / An Chomhairle Ealaíon"
+                  className="h-12 w-auto object-contain"
+                />
+                <img
+                  src="/images/site/artlinks-logo.png"
+                  alt="ArtLinks"
+                  className="h-9 w-auto rounded-xs bg-white px-2 py-1 object-contain shadow-2xs"
+                />
+              </div>
             </div>
           </div>
 
