@@ -16,6 +16,11 @@ import {
   Phone,
   RefreshCw,
   CreditCard,
+  Lock,
+  LogOut,
+  Eye,
+  EyeOff,
+  AlertCircle,
 } from "lucide-react";
 import {
   getOfferingCategories,
@@ -30,6 +35,16 @@ import type { SubmissionRecord } from "@/app/api/submissions/route";
 import type { OrderRecord } from "@/app/api/orders/route";
 
 export default function AdminStudioPage() {
+  // Authentication State
+  const [authChecked, setAuthChecked] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [adminEmail, setAdminEmail] = useState("");
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [loginError, setLoginError] = useState<string | null>(null);
+  const [loggingIn, setLoggingIn] = useState(false);
+
   const [activeTab, setActiveTab] = useState<
     "inbox" | "orders" | "offerings" | "gifts" | "poems" | "events"
   >("inbox");
@@ -93,9 +108,64 @@ export default function AdminStudioPage() {
   }, []);
 
   useEffect(() => {
-    fetchSubmissions();
-    fetchOrders();
+    async function checkSession() {
+      try {
+        const res = await fetch("/api/admin/auth");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.authenticated) {
+            setIsAuthenticated(true);
+            setAdminEmail(data.email || "clodaghberesford@yahoo.com");
+            fetchSubmissions();
+            fetchOrders();
+          }
+        }
+      } catch {
+        // ignore
+      } finally {
+        setAuthChecked(true);
+      }
+    }
+    checkSession();
   }, [fetchSubmissions, fetchOrders]);
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoggingIn(true);
+    setLoginError(null);
+    try {
+      const res = await fetch("/api/admin/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: loginEmail,
+          password: loginPassword,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.authenticated) {
+        setLoginError(data.error || "Invalid email/username or password.");
+        return;
+      }
+      setIsAuthenticated(true);
+      setAdminEmail(data.email || loginEmail);
+      setLoginPassword("");
+      fetchSubmissions();
+      fetchOrders();
+    } catch {
+      setLoginError("Could not sign in. Please try again.");
+    } finally {
+      setLoggingIn(false);
+    }
+  };
+
+  const handleLogout = async () => {
+    await fetch("/api/admin/auth", { method: "DELETE" });
+    setIsAuthenticated(false);
+    setAdminEmail("");
+    setSubmissions([]);
+    setOrders([]);
+  };
 
   const handleUpdateOrderStatus = async (
     id: string,
@@ -282,20 +352,132 @@ export default function AdminStudioPage() {
       ? submissions
       : submissions.filter((s) => s.status === statusFilter);
 
+  if (!authChecked) {
+    return (
+      <div className="mx-auto max-w-md px-6 py-24 text-center">
+        <RefreshCw className="mx-auto h-6 w-6 animate-spin text-[#9a7b38]" />
+        <p className="mt-3 font-sans text-xs uppercase tracking-widest text-stone-500">
+          Verifying Admin Session...
+        </p>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="mx-auto max-w-md px-6 py-20">
+        <div className="rounded-sm border border-stone-300 bg-white p-8 shadow-md sm:p-10">
+          <div className="flex flex-col items-center text-center">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f5efe2] text-[#8a6a28]">
+              <Lock className="h-5 w-5" />
+            </div>
+            <span className="mt-3 font-sans text-xs font-bold uppercase tracking-widest text-[#9a7b38]">
+              Protected Administration Area
+            </span>
+            <h1 className="mt-1 text-3xl font-semibold text-stone-950">
+              Admin Sign In
+            </h1>
+            <p className="mt-2 text-sm text-stone-600">
+              Sign in to access Clodagh Beresford Dunne’s Bookings Inbox, PayPal
+              Orders, and Content Studio.
+            </p>
+          </div>
+
+          {loginError && (
+            <div className="mt-5 flex items-center gap-2 rounded-xs border border-red-300 bg-red-50 p-3 text-xs font-medium text-red-900">
+              <AlertCircle className="h-4 w-4 shrink-0 text-red-700" />
+              <span>{loginError}</span>
+            </div>
+          )}
+
+          <form onSubmit={handleLogin} className="mt-6 space-y-4">
+            <div>
+              <label className="block font-sans text-xs font-bold uppercase tracking-wider text-stone-700">
+                Email or Username
+              </label>
+              <input
+                type="text"
+                required
+                autoComplete="username"
+                value={loginEmail}
+                onChange={(e) => setLoginEmail(e.target.value)}
+                placeholder="clodaghberesford@yahoo.com"
+                className="mt-1 w-full rounded-xs border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 focus:border-[#9a7b38] focus:outline-hidden"
+              />
+            </div>
+
+            <div>
+              <label className="block font-sans text-xs font-bold uppercase tracking-wider text-stone-700">
+                Password
+              </label>
+              <div className="relative mt-1">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  required
+                  autoComplete="current-password"
+                  value={loginPassword}
+                  onChange={(e) => setLoginPassword(e.target.value)}
+                  placeholder="••••••••••••"
+                  className="w-full rounded-xs border border-stone-300 py-2.5 pr-10 pl-3.5 text-sm text-stone-900 focus:border-[#9a7b38] focus:outline-hidden"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((prev) => !prev)}
+                  className="absolute top-1/2 right-3 -translate-y-1/2 text-stone-500 hover:text-stone-900"
+                  aria-label="Toggle password visibility"
+                >
+                  {showPassword ? (
+                    <EyeOff className="h-4 w-4" />
+                  ) : (
+                    <Eye className="h-4 w-4" />
+                  )}
+                </button>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              disabled={loggingIn}
+              className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-stone-950 px-6 py-3 font-sans text-xs font-bold uppercase tracking-widest text-white transition hover:bg-[#9a7b38] disabled:opacity-60"
+            >
+              <Lock className="h-3.5 w-3.5" />
+              <span>{loggingIn ? "Signing In..." : "Sign In to Admin"}</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-7xl px-6 py-12 lg:px-10">
-      <div className="border-b border-stone-300 pb-6">
-        <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#9a7b38]">
-          Self-Service Content &amp; Bookings Manager
-        </span>
-        <h1 className="mt-1 text-4xl font-semibold text-stone-950 sm:text-5xl">
-          Website Content Studio &amp; Bookings Inbox
-        </h1>
-        <p className="mt-2 max-w-3xl text-base text-stone-700">
-          View and reply to incoming bookings and enquiries, or add, edit, and
-          remove courses, colour-coded adverts, gift items, news events, and
-          poems at any time.
-        </p>
+      <div className="flex flex-wrap items-end justify-between gap-4 border-b border-stone-300 pb-6">
+        <div>
+          <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#9a7b38]">
+            Self-Service Content &amp; Bookings Manager
+          </span>
+          <h1 className="mt-1 text-4xl font-semibold text-stone-950 sm:text-5xl">
+            Website Content Studio &amp; Bookings Inbox
+          </h1>
+          <p className="mt-2 max-w-3xl text-base text-stone-700">
+            View and reply to incoming bookings and enquiries, or add, edit, and
+            remove courses, colour-coded adverts, gift items, news events, and
+            poems at any time.
+          </p>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="font-sans text-xs text-stone-600">
+            Signed in as <strong>{adminEmail}</strong>
+          </span>
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="inline-flex items-center gap-1.5 rounded-full border border-stone-400 bg-white px-4 py-2 font-sans text-xs font-bold uppercase tracking-wider text-stone-800 hover:border-stone-950 hover:bg-stone-100"
+          >
+            <LogOut className="h-3.5 w-3.5" />
+            <span>Sign Out</span>
+          </button>
+        </div>
       </div>
 
       {statusMessage && (

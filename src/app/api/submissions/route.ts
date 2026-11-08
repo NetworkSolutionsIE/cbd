@@ -3,6 +3,7 @@ import { ConvexHttpClient } from "convex/browser";
 import fs from "fs/promises";
 import path from "path";
 import { getSiteData } from "@/lib/content";
+import { isAdminAuthenticated } from "@/lib/adminAuth";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 
@@ -133,6 +134,11 @@ async function sendEmailViaResend(payload: {
 }
 
 export async function GET() {
+  const auth = await isAdminAuthenticated();
+  if (!auth.authenticated) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   const convex = getConvexClient();
 
   if (convex) {
@@ -281,6 +287,11 @@ export async function POST(request: Request) {
 }
 
 export async function PATCH(request: Request) {
+  const auth = await isAdminAuthenticated();
+  if (!auth.authenticated) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const { id, status } = body as {
@@ -316,6 +327,11 @@ export async function PATCH(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const auth = await isAdminAuthenticated();
+  if (!auth.authenticated) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get("id");

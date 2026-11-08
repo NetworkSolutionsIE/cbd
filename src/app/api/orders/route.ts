@@ -3,6 +3,7 @@ import { ConvexHttpClient } from "convex/browser";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { getSiteData } from "@/lib/content";
+import { isAdminAuthenticated } from "@/lib/adminAuth";
 
 export interface OrderRecord {
   _id: string;
@@ -46,6 +47,11 @@ export async function GET(request: Request) {
         id: id as Id<"orders">,
       });
       return NextResponse.json({ configured: true, order });
+    }
+
+    const auth = await isAdminAuthenticated();
+    if (!auth.authenticated) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
     const items = await convex.query(api.orders.list, {});
@@ -249,6 +255,11 @@ export async function PATCH(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const auth = await isAdminAuthenticated();
+  if (!auth.authenticated) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const { searchParams } = new URL(request.url);
     const id = searchParams.get("id");

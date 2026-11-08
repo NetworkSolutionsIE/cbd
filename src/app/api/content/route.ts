@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
+import { isAdminAuthenticated } from "@/lib/adminAuth";
 
 const ALLOWED_FILES = ["poems", "offerings", "gifts", "site"] as const;
 type AllowedFile = (typeof ALLOWED_FILES)[number];
@@ -26,6 +27,11 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await isAdminAuthenticated();
+  if (!auth.authenticated) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const body = await request.json();
     const { type, data } = body as { type: AllowedFile; data: unknown };
