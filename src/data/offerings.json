@@ -34,16 +34,16 @@
         ],
         "photos": [
           {
+            "src": "/images/offerings/colligan-seminar-table-1.jpg",
+            "caption": "The seminar table in Colligan, Co. Waterford set for a small-group course"
+          },
+          {
+            "src": "/images/offerings/colligan-refreshments-1.jpg",
+            "caption": "Homemade baking and refreshments prepared for retreat participants"
+          },
+          {
             "src": "/images/gallery/carlow-workshop.jpg",
             "caption": "Clodagh facilitating a round-table adult poetry seminar"
-          },
-          {
-            "src": "/images/site/contact-book.jpg",
-            "caption": "Close reading and manuscript work during full-day retreats"
-          },
-          {
-            "src": "/images/site/clodagh-portrait.jpg",
-            "caption": "Clodagh Beresford Dunne in her study in Dungarvan, Co. Waterford"
           }
         ],
         "testimonials": [
@@ -99,16 +99,16 @@
         ],
         "photos": [
           {
+            "src": "/images/offerings/colligan-seminar-table-2.jpg",
+            "caption": "The Colligan workshop room prepared for close reading and craft discussion"
+          },
+          {
+            "src": "/images/offerings/lc-course-whiteboard.jpg",
+            "caption": "Workshop whiteboard: ‘Seeing the Poem as a House’ & Adrienne Rich"
+          },
+          {
             "src": "/images/gallery/carlow-workshop.jpg",
             "caption": "Intimate seminar-style poetry workshopping"
-          },
-          {
-            "src": "/images/gallery/five-poets.jpg",
-            "caption": "Clodagh with fellow poets including Thomas McCarthy"
-          },
-          {
-            "src": "/images/gallery/eavan-boland.jpg",
-            "caption": "With Eavan Boland at the Irish Book Awards"
           }
         ],
         "testimonials": [
@@ -154,25 +154,37 @@
           "bookingContact": "Text or WhatsApp 086 8629283 | clodaghberesforddunnepoet.com",
           "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
         },
-        "longDescription": "Structured two-hour fortnightly sessions designed to demystify Paper 1 composition and Paper 2 poetry. Students learn how a practicing poet reads unseen and prescribed poems, unlocking authentic personal response and high-scoring critical expression.",
+        "longDescription": "A uniquely designed exam-focused and wellbeing course for Senior Cycle students covering Poetry (Prescribed & Unseen, Paper 2) and The Composition (Paper 1). Structured two-hour fortnightly sessions in Colligan demystify exam questions—teaching students to approach ‘The Poem as a House’, unlock authentic personal response, and write with clarity, confidence, and critical precision.",
         "bullets": [
-          "Paper 1: THE ESSAY (Focus: Ideas, structure, argument architecture & technique)",
-          "Paper 2: PRESCRIBED & UNSEEN POETRY (Focus: Strengthen understanding, analysis, interpretation, personal response & quote recall)",
-          "Vocabulary Expansion & Increased Exam Confidence across Higher and Ordinary Levels",
-          "Full study notes provided at each session; group numbers strictly limited for individual attention"
+          "Paper 1: THE COMPOSITION / ESSAY (Focus: Ideas, structure, argument architecture & technique)",
+          "Paper 2: PRESCRIBED & UNSEEN POETRY (Focus: ‘Seeing the Poem as a House’ — strengthen understanding, analysis, interpretation, personal response & quote recall)",
+          "Vocabulary Expansion, Student Wellbeing & Increased Exam Confidence across Higher and Ordinary Levels",
+          "Comprehensive printed handouts and study notes provided at each session; group numbers strictly limited for individual attention"
         ],
         "photos": [
           {
+            "src": "/images/offerings/colligan-seminar-table-2.jpg",
+            "caption": "The Colligan seminar room set up with Poetry Focus 2027 & individual place settings"
+          },
+          {
+            "src": "/images/offerings/lc-course-session1-handout.jpg",
+            "caption": "Session 1 printed course handout: ‘Let’s Start to See The Poem as a House’"
+          },
+          {
+            "src": "/images/offerings/lc-course-whiteboard.jpg",
+            "caption": "Session 1 whiteboard: Poetic architecture and Adrienne Rich quotation"
+          },
+          {
+            "src": "/images/offerings/lc-course-registration-desk.jpg",
+            "caption": "Student registration forms and curated poetry anthologies on the study desk"
+          },
+          {
+            "src": "/images/offerings/colligan-refreshments-2.jpg",
+            "caption": "Homemade chocolate chip cookies and refreshments for Friday afternoon students"
+          },
+          {
             "src": "/images/offerings/school-visit-2.jpg",
             "caption": "Clodagh teaching Unseen Poetry to Leaving Certificate students"
-          },
-          {
-            "src": "/images/offerings/school-visit-1.jpg",
-            "caption": "Working with secondary school writers on prompts and close reading"
-          },
-          {
-            "src": "/images/site/contact-book.jpg",
-            "caption": "Curated study notes and poetic analysis handouts provided"
           }
         ],
         "testimonials": [
@@ -351,12 +363,12 @@
         ],
         "photos": [
           {
-            "src": "/images/site/clodagh-portrait.jpg",
-            "caption": "One-to-one mentoring in person or online"
+            "src": "/images/site/clodagh-profile-outdoor.jpg",
+            "caption": "One-to-one mentoring in person in Dungarvan or online"
           },
           {
-            "src": "/images/site/contact-book.jpg",
-            "caption": "Detailed line-by-line manuscript feedback"
+            "src": "/images/offerings/colligan-seminar-table-1.jpg",
+            "caption": "Quiet consultation and seminar table in Colligan, Co. Waterford"
           },
           {
             "src": "/images/gallery/eavan-boland.jpg",

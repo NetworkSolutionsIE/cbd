@@ -149,6 +149,36 @@
       "src": "/images/offerings/school-visit-2.jpg",
       "title": "Leaving Cert Unseen Poetry Masterclass",
       "caption": "Delivering a workshop on Unseen Poetry to Leaving Certificate English students."
+    },
+    {
+      "id": "colligan-seminar-room",
+      "src": "/images/offerings/colligan-seminar-table-2.jpg",
+      "title": "The Seminar Room in Colligan, Co. Waterford",
+      "caption": "The seminar table in Colligan prepared for Leaving Certificate English and creative writing sessions."
+    },
+    {
+      "id": "lc-course-handout",
+      "src": "/images/offerings/lc-course-session1-handout.jpg",
+      "title": "Course Handout — ‘Seeing the Poem as a House’",
+      "caption": "Bespoke printed study notes for Clodagh’s Leaving Certificate English Fortnightly Friday Sessions in Colligan."
+    },
+    {
+      "id": "lc-course-whiteboard",
+      "src": "/images/offerings/lc-course-whiteboard.jpg",
+      "title": "Session 1 Whiteboard — Colligan Seminar Room",
+      "caption": "Exploring poetic architecture and Adrienne Rich’s ‘Poems are like dreams: in them you put what you don’t know you know’."
+    },
+    {
+      "id": "colligan-refreshments",
+      "src": "/images/offerings/colligan-refreshments-1.jpg",
+      "title": "Hospitality & Refreshments at Colligan",
+      "caption": "Homemade chocolate chip cookies and refreshments ready for workshop and student course participants."
+    },
+    {
+      "id": "clodagh-portrait-outdoor",
+      "src": "/images/site/clodagh-profile-outdoor.jpg",
+      "title": "Clodagh Beresford Dunne",
+      "caption": "Portrait of poet Clodagh Beresford Dunne."
     }
   ],
   "newsEvents": [
