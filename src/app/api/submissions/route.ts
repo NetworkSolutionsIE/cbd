@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
 import { ConvexHttpClient } from "convex/browser";
-import { makeFunctionReference } from "convex/server";
 import fs from "fs/promises";
 import path from "path";
 import { getSiteData } from "@/lib/content";
+import { api } from "../../../../convex/_generated/api";
+import { Id } from "../../../../convex/_generated/dataModel";
 
 export interface SubmissionRecord {
   _id: string;
@@ -136,8 +137,10 @@ export async function GET() {
 
   if (convex) {
     try {
-      const listQuery = makeFunctionReference<"query">("submissions:list");
-      const items = (await convex.query(listQuery, {})) as SubmissionRecord[];
+      const items = (await convex.query(
+        api.submissions.list,
+        {}
+      )) as SubmissionRecord[];
       return NextResponse.json({
         backend: "convex",
         configured: true,
@@ -207,26 +210,23 @@ export async function POST(request: Request) {
     if (convex) {
       try {
         if (!emailSent) {
-          const emailAction = makeFunctionReference<"action">(
-            "submissions:sendEmailNotification"
-          );
-          const actionResult = (await convex.action(emailAction, {
-            name,
-            email,
-            phone,
-            category,
-            subject,
-            offering,
-            message,
-            recipientEmail,
-          })) as { sent?: boolean };
+          const actionResult = (await convex.action(
+            api.submissions.sendEmailNotification,
+            {
+              name,
+              email,
+              phone,
+              category,
+              subject,
+              offering,
+              message,
+              recipientEmail,
+            }
+          )) as { sent?: boolean };
           if (actionResult?.sent) emailSent = true;
         }
 
-        const createMutation = makeFunctionReference<"mutation">(
-          "submissions:create"
-        );
-        const convexId = await convex.mutation(createMutation, {
+        const convexId = await convex.mutation(api.submissions.create, {
           name,
           email,
           phone,
@@ -291,10 +291,10 @@ export async function PATCH(request: Request) {
     const convex = getConvexClient();
     if (convex && !id.startsWith("sub-")) {
       try {
-        const updateMutation = makeFunctionReference<"mutation">(
-          "submissions:updateStatus"
-        );
-        await convex.mutation(updateMutation, { id, status });
+        await convex.mutation(api.submissions.updateStatus, {
+          id: id as Id<"submissions">,
+          status,
+        });
         return NextResponse.json({ ok: true, backend: "convex" });
       } catch {
         // Fall through to local
@@ -326,10 +326,9 @@ export async function DELETE(request: Request) {
     const convex = getConvexClient();
     if (convex && !id.startsWith("sub-")) {
       try {
-        const removeMutation = makeFunctionReference<"mutation">(
-          "submissions:remove"
-        );
-        await convex.mutation(removeMutation, { id });
+        await convex.mutation(api.submissions.remove, {
+          id: id as Id<"submissions">,
+        });
         return NextResponse.json({ ok: true, backend: "convex" });
       } catch {
         // Fall through to local

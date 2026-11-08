@@ -1,7 +1,7 @@
-import { mutationGeneric, queryGeneric, actionGeneric } from "convex/server";
+import { mutation, query, action } from "./_generated/server";
 import { v } from "convex/values";
 
-export const create = mutationGeneric({
+export const create = mutation({
   args: {
     name: v.string(),
     email: v.string(),
@@ -23,15 +23,15 @@ export const create = mutationGeneric({
   },
 });
 
-export const list = queryGeneric({
+export const list = query({
   args: {},
   handler: async (ctx) => {
-    const items = await ctx.db.query("submissions").order("desc").collect();
+    const items = await ctx.db.query("submissions").order("desc").take(200);
     return items;
   },
 });
 
-export const updateStatus = mutationGeneric({
+export const updateStatus = mutation({
   args: {
     id: v.id("submissions"),
     status: v.union(
@@ -47,7 +47,7 @@ export const updateStatus = mutationGeneric({
   },
 });
 
-export const remove = mutationGeneric({
+export const remove = mutation({
   args: {
     id: v.id("submissions"),
   },
@@ -57,7 +57,7 @@ export const remove = mutationGeneric({
   },
 });
 
-export const sendEmailNotification = actionGeneric({
+export const sendEmailNotification = action({
   args: {
     name: v.string(),
     email: v.string(),
