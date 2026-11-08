@@ -1,0 +1,191 @@
+{
+  "siteTitle": "Clodagh Beresford Dunne Poet",
+  "tagline": "I write words – and help others find theirs.",
+  "email": "clodaghberesforddunnepoetry@gmail.com",
+  "workshopEmail": "clodaghberesford@yahoo.com",
+  "phone": "086 8629283",
+  "location": "Colligan, Dungarvan, Co. Waterford, Ireland (X35 YC66)",
+  "social": {
+    "instagram": "https://www.instagram.com/clodaghberesforddunnepoetry",
+    "facebook": "https://www.facebook.com/clodaghberesforddunnepoetry",
+    "handle": "@clodaghberesforddunnepoetry"
+  },
+  "home": {
+    "heroHeading": "I’m Clodagh Beresford Dunne.",
+    "heroSubheading": "I write words – and help others find theirs.",
+    "portraitImage": "/images/site/clodagh-portrait.jpg",
+    "portraitAlt": "Portrait of Clodagh Beresford Dunne in front of her bookshelves",
+    "welcomeParagraphs": [
+      "I’m a Poet and a Poetry and Creative Writing Teacher. Since 2009 my poems have been published in newspapers, literary journals, magazines and anthologies in Ireland, The UK, Austria, America and Australia and they’ve been broadcast on TV, radio and online podcasts in Ireland and America.",
+      "In 2016 I received the Arts Council of Ireland Emerging Writer Award and in 2017 my poem SEVEN SUGAR CUBES was voted Irish Poem of the Year at the Bord Gáis Energy Irish Book Awards. In 2019 Edna O’Brien DBE selected me for the UK Clarissa Luard Emerging Writer Award. I’ve also given public readings of my poems in several universities in America and at public events and festivals in Ireland and the UK.",
+      "When I’m not writing or teaching I’m fully immersed in motherhood and busy family life with my husband and our four children (aged 21, 18, 15 and 15). We live in the beautiful harbour town of Dungarvan, Co. Waterford in the southeast of Ireland (where I was born and raised)."
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "Award-winning Irish Poet, Clodagh Beresford Dunne was born in Dublin in 1975 and raised in the harbour town of Dungarvan, Co. Waterford, in the southeast of Ireland. She grew up in a local newspaper family (‘The Dungarvan Observer’, a weekly broadsheet having been founded by her great-grandfather, James A. Lynch, in 1912). During her childhood, her grandfather P.J. Lynch was editor of the newspaper, and both of her parents worked alongside him. Her writing was first published in the ‘Dungarvan Observer’ when she was 8 years old.",
+      "She was educated in the Presentation Convent, Dungarvan and in Rockwell College Cashel and earned degrees in English and in Law from University College Galway (1995 and 1997 respectively). She apprenticed and practised as a qualified solicitor in Dublin from 1998 to 2005, receiving her parchment from the Law Society of Ireland in the Long Vacation of 2000. During her university and training years, she was an award-winning public speaker and debater (LAMDA Gold Medal recipient), was a finalist in the Irish Times Debating Competition and represented Ireland on two occasions at the World Universities Debating Championships, including at Princeton University.",
+      "Her poems have been published in outlets including The Irish Times, Poetry Magazine (Chicago), Poetry Ireland Review, The Stinging Fly, The Moth, Southword, The London Magazine, Poetry Salzburg Review, The Woven Tale Press (New York), The High Window, 14 Magazine, Magma, and Cordite (Australia). The Arts Council of Ireland has awarded her its Emerging Writer Award, its Agility Award and a Travel and Training Award. She was the winner of The Irish Book Awards Irish Poem of the Year Award for ‘Seven Sugar Cubes’ and, at the request of Edna O’Brien DBE, she received the 2019 Arts Council of England’s Clarissa Luard Emerging Writer Award.",
+      "Clodagh has given readings and lectures on her work in Ireland, the UK and in several universities in the USA; she served as adjudicator for the Listowel Writers’ Week National Pigott Poetry Prize, and she has taught Creative Writing and Poetry to school students, university students, and adults for over 16 years."
+    ],
+    "highlights": [
+      {
+        "year": "2016",
+        "title": "Arts Council of Ireland Emerging Writer Award",
+        "detail": "Followed by Arts Council Agility Award and Travel & Training Award"
+      },
+      {
+        "year": "2017",
+        "title": "Irish Poem of the Year — Irish Book Awards",
+        "detail": "Voted by the public for ‘Seven Sugar Cubes’ (published in The Irish Times)"
+      },
+      {
+        "year": "2019",
+        "title": "Clarissa Luard Emerging Writer Award (UK)",
+        "detail": "Selected personally by Edna O’Brien DBE at the David Cohen Prize for Literature, London"
+      },
+      {
+        "year": "16+ Years",
+        "title": "Facilitator, Adjudicator & Visiting Lecturer",
+        "detail": "Listowel Writers’ Week Pigott Poetry Prize Judge; readings & seminars across Ireland, the UK & US universities"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": "edna-obrien",
+      "quote": "Here is a brilliant writer. She is a young poet with an old soul. By that I mean she has ancient wisdom and thrust but also a modern, searching, brave sensibility. Clodagh Beresford Dunne is a writer in love with language.",
+      "author": "Edna O’Brien DBE",
+      "role": "Recipient of the David Cohen Prize for Literature"
+    },
+    {
+      "id": "thomas-mccarthy",
+      "quote": "Clodagh Beresford Dunne domesticates genius.",
+      "author": "Thomas McCarthy",
+      "role": "Poet"
+    },
+    {
+      "id": "jan-beatty",
+      "quote": "These poems are brave and necessary.",
+      "author": "Jan Beatty",
+      "role": "Poet & Professor, USA"
+    },
+    {
+      "id": "melanie-almeder",
+      "quote": "I am certain that Clodagh Beresford Dunne is one of the great up and coming poets of our times.",
+      "author": "Dr. Melanie Almeder",
+      "role": "John P. Fishwick Professor of English, Roanoke College, Virginia, USA"
+    },
+    {
+      "id": "michael-paul-thomas",
+      "quote": "Her passion and commitment to poetry is infectious. In addition to her talent as a writer, Clodagh Beresford Dunne is an ambassador of poetry and literature.",
+      "author": "Professor Michael Paul Thomas",
+      "role": "Director, Visiting Writers’ Series, Monmouth University, New Jersey, USA"
+    },
+    {
+      "id": "ardscoil-na-mara",
+      "quote": "Clodagh Beresford-Dunne, award-winning Co. Waterford poet, visited the school on Wednesday. She inspired our Creative Writing Club with writing prompts, and she gave a workshop on unseen poetry to Leaving Cert students.",
+      "author": "Ardscoil na Mara",
+      "role": "Secondary School, Tramore, Co. Waterford"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "edna-obrien",
+      "src": "/images/gallery/edna-obrien.jpg",
+      "title": "Clarissa Luard Award Presentation, Florence Hall, London",
+      "caption": "Florence Hall, London, December 2018. Edna O’Brien DBE (recipient of the David Cohen Prize for Literature) presenting the Arts Council of England’s Clarissa Luard Emerging Writer Award to Clodagh Beresford Dunne."
+    },
+    {
+      "id": "eavan-boland",
+      "src": "/images/gallery/eavan-boland.jpg",
+      "title": "Irish Book Awards with Eavan Boland",
+      "caption": "Bord Gáis Energy Irish Book Awards, 2017 — Eavan Boland (Lifetime Achievement Award Recipient) and Clodagh Beresford Dunne (Irish Poem of the Year Winner)."
+    },
+    {
+      "id": "michael-d-higgins",
+      "src": "/images/gallery/michael-d-higgins.jpg",
+      "title": "Bloomsday with President Michael D. Higgins",
+      "caption": "Bloomsday, 2019 — Clodagh Beresford Dunne in conversation with President of Ireland, Michael D. Higgins."
+    },
+    {
+      "id": "awp-washington",
+      "src": "/images/gallery/awp-washington.jpg",
+      "title": "AWP Book Fair Poetry Reading, Washington DC",
+      "caption": "American Writers Programme (AWP) Book Fair Poetry Reading, Washington DC, 2017 — (L to R) Zeina Hashem Beck, Jan Beatty, Tess Barry, Clodagh Beresford Dunne, and Eleanor Hooker."
+    },
+    {
+      "id": "five-poets",
+      "src": "/images/gallery/five-poets.jpg",
+      "title": "With Fellow Poets & Thomas McCarthy",
+      "caption": "Clodagh Beresford Dunne pictured with fellow poets including Thomas McCarthy."
+    },
+    {
+      "id": "dromineer",
+      "src": "/images/gallery/dromineer.jpg",
+      "title": "Dromineer Literary Festival Reading",
+      "caption": "Clodagh reading from her work at the Dromineer Literary Festival."
+    },
+    {
+      "id": "carlow-workshop",
+      "src": "/images/gallery/carlow-workshop.jpg",
+      "title": "Creative Writing & Poetry Workshop",
+      "caption": "Clodagh facilitating an intimate round-table poetry and creative writing workshop."
+    },
+    {
+      "id": "school-visit-1",
+      "src": "/images/offerings/school-visit-1.jpg",
+      "title": "Creative Writing Club Workshop — Ardscoil na Mara",
+      "caption": "Inspiring the Creative Writing Club with writing prompts during a school visit in Co. Waterford."
+    },
+    {
+      "id": "school-visit-2",
+      "src": "/images/offerings/school-visit-2.jpg",
+      "title": "Leaving Cert Unseen Poetry Masterclass",
+      "caption": "Delivering a workshop on Unseen Poetry to Leaving Certificate English students."
+    }
+  ],
+  "newsEvents": [
+    {
+      "id": "jan-2027-workshop",
+      "date": "Saturday 23rd OR Sunday 24th January, 2027",
+      "category": "Poetry Workshop",
+      "title": "Full Day Poetry Workshop: “Titles & Opening Lines”",
+      "location": "Colligan Falls, Dungarvan, Co. Waterford (X35 YC66)",
+      "summary": "An intensive intermediate/advanced full-day poetry workshop (9:30 am – 5:00 pm) examining the titles and opening lines of 20 contemporary poems, workshopping 2 poems per participant, plus 200-word written follow-up feedback. Group strictly capped at 7 participants (€150 pp, lunch included).",
+      "ctaText": "View Workshop & Book",
+      "ctaLink": "/work-with-me/poetry-workshops"
+    },
+    {
+      "id": "nov-2026-leaving-cert",
+      "date": "Commencing Friday 6th November, 2026 (3:00 pm – 5:00 pm)",
+      "category": "School Student Course",
+      "title": "Leaving Certificate English — Fortnightly Friday Sessions",
+      "location": "Colligan, Dungarvan, Co. Waterford",
+      "summary": "Fortnightly two-hour sessions covering Paper 1 (The Essay: ideas, structure, technique) and Paper 2 (Prescribed & Unseen Poetry: analysis, personal response, quote recall, vocabulary expansion). Higher & Ordinary Levels, full notes provided (€50 pp).",
+      "ctaText": "View Student Course & Book",
+      "ctaLink": "/work-with-me/school-student-courses-retreats"
+    },
+    {
+      "id": "magma-cordgrass-2024",
+      "date": "October 2024",
+      "category": "Publication",
+      "title": "‘Cordgrass’ Published in Magma Poetry (Grassroots Issue)",
+      "location": "Magma Magazine, UK",
+      "summary": "Clodagh’s spatial poem ‘Cordgrass’, connecting the landscape of Scarborough Marsh with Irish heritage and St. Brigid’s crosses, was published in the Grassroots Issue of Magma Magazine.",
+      "ctaText": "Read ‘Cordgrass’",
+      "ctaLink": "/poems/cordgrass"
+    },
+    {
+      "id": "irish-times-coronation-2024",
+      "date": "14th September 2024",
+      "category": "Publication",
+      "title": "Poem of the Week in The Irish Times: ‘At the King’s Coronation...’",
+      "location": "The Irish Times",
+      "summary": "‘At the King’s Coronation the talk is of the Weight of his Once-Off Crown’, reflecting on her late father’s time as a Buckingham Palace Guard, featured as Poem of the Week in The Irish Times.",
+      "ctaText": "Read the Poem",
+      "ctaLink": "/poems/at-the-kings-coronation"
+    }
+  ]
+}
+

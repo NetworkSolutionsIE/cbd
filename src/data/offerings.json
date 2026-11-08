@@ -1,0 +1,502 @@
+[
+  {
+    "id": "adult-courses-retreats",
+    "slug": "adult-courses-retreats",
+    "title": "Adult Courses & Retreats",
+    "shortTitle": "Adult Courses & Retreats",
+    "tagline": "Immersive creative writing and poetry retreats in the tranquil surroundings of Colligan, Co. Waterford.",
+    "intro": "Designed for emerging and experienced adult writers alike, Clodagh’s courses and full-day retreats combine close reading of contemporary poetry, generative writing exercises, and supportive seminar-style workshopping in an intimate, capped group setting.",
+    "items": [
+      {
+        "id": "creative-writing-full-day-retreat",
+        "title": "Creative Writing & Poetry Full-Day Retreat",
+        "advert": {
+          "colorTheme": "amber",
+          "badge": "ADULT COURSE & RETREAT",
+          "heading": "CREATIVE WRITING FULL-DAY RETREAT",
+          "subheading": "“FINDING THE LINE & THE VOICE”",
+          "facilitator": "with POET, CLODAGH BERESFORD DUNNE",
+          "level": "ALL LEVELS WELCOME (BEGINNER TO ADVANCED)",
+          "date": "Spring / Autumn Seasonal Dates (Enquire for Next Available Date)",
+          "venue": "Colligan Falls, Dungarvan, Co. Waterford (X35 YC66)",
+          "time": "9:30 am (for a 10:00 am sharp start) to 5:00 pm",
+          "price": "€150 pp",
+          "notes": "Tea, artisan coffee and home-cooked lunch included. Numbers strictly limited (capped at 7 participants).",
+          "bookingContact": "clodaghberesford@yahoo.com (Subject: ADULT RETREAT)",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Step away from daily demands for a restorative day of reading, writing, and conversation beside the Colligan River. With over 16 years of experience teaching adults, university students, and writers, Clodagh guides participants through carefully curated prompts and contemporary texts to unlock new poems and sharpen editorial instincts.",
+        "bullets": [
+          "Generate fresh drafts through structured morning writing prompts and sensory exercises",
+          "Close-read landmark contemporary poems from Ireland, the UK, and America",
+          "Workshop work-in-progress in a warm, constructive group (strictly capped at 7 writers)",
+          "Receive individual written follow-up notes and reading recommendations after the retreat"
+        ],
+        "photos": [
+          {
+            "src": "/images/gallery/carlow-workshop.jpg",
+            "caption": "Clodagh facilitating a round-table adult poetry seminar"
+          },
+          {
+            "src": "/images/site/contact-book.jpg",
+            "caption": "Close reading and manuscript work during full-day retreats"
+          },
+          {
+            "src": "/images/site/clodagh-portrait.jpg",
+            "caption": "Clodagh Beresford Dunne in her study in Dungarvan, Co. Waterford"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Her passion and commitment to poetry is infectious. In addition to her talent as a writer, Clodagh Beresford Dunne is an ambassador of poetry and literature.",
+            "author": "Professor Michael Paul Thomas",
+            "role": "Director, Visiting Writers’ Series, Monmouth University, New Jersey, USA"
+          },
+          {
+            "quote": "Clodagh Beresford Dunne is a writer in love with language.",
+            "author": "Edna O’Brien DBE",
+            "role": "Author & Clarissa Luard Award Selector"
+          }
+        ],
+        "bookingEmail": "clodaghberesford@yahoo.com",
+        "bookingSubject": "ADULT RETREAT ENQUIRY"
+      }
+    ]
+  },
+  {
+    "id": "poetry-workshops",
+    "slug": "poetry-workshops",
+    "title": "Poetry Workshops",
+    "shortTitle": "Poetry Workshops",
+    "tagline": "Intensive craft-focused workshops for intermediate and advanced practicing poets.",
+    "intro": "Focused masterclasses examining specific elements of poetic craft—from titles, opening lines, and stanzaic architecture to revision, compression, and preparing manuscripts for journal submission.",
+    "items": [
+      {
+        "id": "titles-and-opening-lines-workshop",
+        "title": "Full Day Poetry Workshop: “Titles & Opening Lines”",
+        "advert": {
+          "colorTheme": "sky",
+          "badge": "INTERMEDIATE / ADVANCED WORKSHOP",
+          "heading": "FULL DAY POETRY WORKSHOP",
+          "subheading": "“TITLES & OPENING LINES”",
+          "facilitator": "with POET, CLODAGH BERESFORD DUNNE",
+          "level": "LEVEL: INTERMEDIATE / ADVANCED",
+          "date": "Saturday 23rd January OR Sunday 24th January, 2027",
+          "venue": "Colligan Falls, Dungarvan, Co. Waterford (X35 YC66)",
+          "time": "9:30 am (for a 10 am sharp start) to 5 pm",
+          "price": "€150 pp",
+          "notes": "Tea, Coffee and lunch included. Numbers strictly limited. (Group capped at 7 participants).",
+          "bookingContact": "clodaghberesford@yahoo.com (Subject: JANUARY POETRY WORKSHOP)",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "SPECIAL FOCUS: TITLES & OPENING LINES. During this intensive one-day poetry workshop at Colligan Falls, participating poets will examine how a poem’s title and opening lines establish tension, voice, contract, and momentum—and apply these insights directly to their own manuscripts.",
+        "bullets": [
+          "Have the opportunity to generate new work through targeted craft exercises",
+          "Interrogate and analyse the titles and opening lines of up to 20 specially selected contemporary poems",
+          "Workshop 2 poems each (poems max 40 lines must be submitted in a single Word document to Clodagh by 15th January, 2027)",
+          "Receive a 200-word emailed feedback from Clodagh following the workshop",
+          "Tea, Coffee and lunch included — numbers strictly capped at 7 participants"
+        ],
+        "photos": [
+          {
+            "src": "/images/gallery/carlow-workshop.jpg",
+            "caption": "Intimate seminar-style poetry workshopping"
+          },
+          {
+            "src": "/images/gallery/five-poets.jpg",
+            "caption": "Clodagh with fellow poets including Thomas McCarthy"
+          },
+          {
+            "src": "/images/gallery/eavan-boland.jpg",
+            "caption": "With Eavan Boland at the Irish Book Awards"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Here is a brilliant writer. She is a young poet with an old soul. By that I mean she has ancient wisdom and thrust but also a modern, searching, brave sensibility.",
+            "author": "Edna O’Brien DBE",
+            "role": "Clarissa Luard Emerging Writer Award Citation"
+          },
+          {
+            "quote": "Clodagh Beresford Dunne writes brave and necessary poems.",
+            "author": "Jan Beatty",
+            "role": "Poet & Professor, USA"
+          }
+        ],
+        "bookingEmail": "clodaghberesford@yahoo.com",
+        "bookingSubject": "JANUARY POETRY WORKSHOP"
+      }
+    ]
+  },
+  {
+    "id": "school-student-courses-retreats",
+    "slug": "school-student-courses-retreats",
+    "title": "School Student Courses & Retreats",
+    "shortTitle": "School Student Courses & Retreats",
+    "tagline": "Expert Leaving Certificate & Junior Cycle English sessions in essay craft, prescribed poetry, and unseen poetry.",
+    "intro": "Taught by an award-winning published poet and former LAMDA Gold Medallist and World Universities Debating finalist, these small-group sessions build genuine analytical depth, quote recall, vocabulary precision, and exam confidence for Higher and Ordinary Level students.",
+    "items": [
+      {
+        "id": "leaving-cert-fortnightly-fridays",
+        "title": "Leaving Certificate English — Fortnightly Friday Sessions",
+        "advert": {
+          "colorTheme": "slate",
+          "badge": "LEAVING CERTIFICATE ENGLISH",
+          "heading": "LEAVING CERTIFICATE ENGLISH",
+          "subheading": "FORTNIGHTLY FRIDAY SESSIONS",
+          "facilitator": "WITH AWARD-WINNING POET, CLODAGH BERESFORD DUNNE",
+          "level": "Higher & Ordinary Levels — Comprehensive Notes Provided",
+          "date": "COMMENCING FRIDAY 6th NOVEMBER, 2026",
+          "venue": "Colligan, Dungarvan, Co. Waterford",
+          "time": "3:00 pm – 5:00 pm",
+          "price": "€50 pp",
+          "notes": "Notes Provided / H & O Levels / Numbers strictly limited.",
+          "bookingContact": "Text or WhatsApp 086 8629283 | clodaghberesforddunnepoet.com",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Structured two-hour fortnightly sessions designed to demystify Paper 1 composition and Paper 2 poetry. Students learn how a practicing poet reads unseen and prescribed poems, unlocking authentic personal response and high-scoring critical expression.",
+        "bullets": [
+          "Paper 1: THE ESSAY (Focus: Ideas, structure, argument architecture & technique)",
+          "Paper 2: PRESCRIBED & UNSEEN POETRY (Focus: Strengthen understanding, analysis, interpretation, personal response & quote recall)",
+          "Vocabulary Expansion & Increased Exam Confidence across Higher and Ordinary Levels",
+          "Full study notes provided at each session; group numbers strictly limited for individual attention"
+        ],
+        "photos": [
+          {
+            "src": "/images/offerings/school-visit-2.jpg",
+            "caption": "Clodagh teaching Unseen Poetry to Leaving Certificate students"
+          },
+          {
+            "src": "/images/offerings/school-visit-1.jpg",
+            "caption": "Working with secondary school writers on prompts and close reading"
+          },
+          {
+            "src": "/images/site/contact-book.jpg",
+            "caption": "Curated study notes and poetic analysis handouts provided"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Clodagh Beresford-Dunne, award-winning Co. Waterford poet, visited the school on Wednesday. She inspired our Creative Writing Club with writing prompts, and she gave a workshop on unseen poetry to Leaving Cert students.",
+            "author": "Ardscoil na Mara",
+            "role": "Secondary School, Tramore, Co. Waterford"
+          }
+        ],
+        "bookingEmail": "clodaghberesforddunnepoetry@gmail.com",
+        "bookingPhone": "086 8629283",
+        "bookingSubject": "LEAVING CERT FORTNIGHTLY FRIDAYS"
+      }
+    ]
+  },
+  {
+    "id": "group-school-visits",
+    "slug": "group-school-visits",
+    "title": "Group & School Visits",
+    "shortTitle": "Group & School Visits",
+    "tagline": "Inspiring in-school workshops, Creative Writing Club sessions, and Leaving Cert masterclasses across Ireland.",
+    "intro": "Clodagh visits primary and secondary schools, libraries, active retirement groups, and literary societies to deliver lively, tailored poetry readings, generative writing workshops, and exam-focused Unseen Poetry masterclasses.",
+    "items": [
+      {
+        "id": "school-and-group-poetry-visits",
+        "title": "Secondary School, Creative Writing Club & Community Visits",
+        "advert": {
+          "colorTheme": "emerald",
+          "badge": "SCHOOLS & COMMUNITY GROUPS",
+          "heading": "GROUP & SCHOOL POETRY VISITS",
+          "subheading": "CREATIVE WRITING CLUBS & UNSEEN POETRY MASTERCLASSES",
+          "facilitator": "with AWARD-WINNING POET, CLODAGH BERESFORD DUNNE",
+          "level": "Primary, Transition Year, Leaving Cert & Adult Community Groups",
+          "date": "Half-Day & Full-Day School Bookings Available Year-Round",
+          "venue": "On-site at Your School, Library, or Cultural Venue",
+          "time": "Tailored to School Timetable (Single Class, Half-Day, or Full-Day)",
+          "price": "Enquire for School / Arts Council Rates",
+          "notes": "Includes bespoke writing prompts, Q&A on the life of a working poet, and Leaving Cert Unseen Poetry strategies.",
+          "bookingContact": "clodaghberesforddunnepoetry@gmail.com",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Whether sparking imagination in a Transition Year or Junior Cycle Creative Writing Club or giving Leaving Certificate students an insider’s toolkit for Unseen Poetry, Clodagh brings warmth, humour, and 16+ years of classroom and stage experience to every school visit.",
+        "bullets": [
+          "Interactive Creative Writing Club workshops with immediate generative prompts",
+          "Dedicated Leaving Certificate Unseen & Prescribed Poetry seminars",
+          "Live readings and candid Q&A on writing, revision, and publishing",
+          "Available for Writer-in-Residence days, World Book Day, and Poetry Day Ireland events"
+        ],
+        "photos": [
+          {
+            "src": "/images/offerings/school-visit-1.jpg",
+            "caption": "Creative Writing Club workshop at Ardscoil na Mara, Tramore"
+          },
+          {
+            "src": "/images/offerings/school-visit-2.jpg",
+            "caption": "Leaving Certificate Unseen Poetry seminar at Ardscoil na Mara"
+          },
+          {
+            "src": "/images/gallery/carlow-workshop.jpg",
+            "caption": "Facilitating group discussion and creative writing exercises"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Clodagh Beresford-Dunne, award-winning Co. Waterford poet, visited the school on Wednesday. She inspired our Creative Writing Club with writing prompts, and she gave a workshop on unseen poetry to Leaving Cert students.",
+            "author": "Ardscoil na Mara (@ardscoilnamara)",
+            "role": "Tramore, Co. Waterford"
+          },
+          {
+            "quote": "Her passion and commitment to poetry is infectious. In addition to her talent as a writer, Clodagh Beresford Dunne is an ambassador of poetry and literature.",
+            "author": "Professor Michael Paul Thomas",
+            "role": "Monmouth University, New Jersey, USA"
+          }
+        ],
+        "bookingEmail": "clodaghberesforddunnepoetry@gmail.com",
+        "bookingSubject": "SCHOOL OR GROUP VISIT ENQUIRY"
+      }
+    ]
+  },
+  {
+    "id": "tailor-made-events",
+    "slug": "tailor-made-events",
+    "title": "Tailor Made Events",
+    "shortTitle": "Tailor Made Events",
+    "tagline": "Bespoke literary gatherings, private retreats, cultural salons, and curated poetry experiences.",
+    "intro": "From private weekend writing retreats and cultural hospitality experiences in Co. Waterford to bespoke literary events for festivals, corporate leadership teams, and private celebrations, every event is crafted around your group’s vision.",
+    "items": [
+      {
+        "id": "bespoke-literary-retreats-and-events",
+        "title": "Bespoke Poetry Retreats, Cultural Salons & Private Gatherings",
+        "advert": {
+          "colorTheme": "rose",
+          "badge": "BESPOKE LITERARY EXPERIENCES",
+          "heading": "TAILOR MADE POETRY EVENTS & SALONS",
+          "subheading": "CURATED RETREATS, PRIVATE READINGS & CULTURAL GATHERINGS",
+          "facilitator": "DESIGNED & HOSTED BY CLODAGH BERESFORD DUNNE",
+          "level": "Private Groups, Cultural Organisations, Festivals & Hospitality Partners",
+          "date": "Custom Dates by Arrangement",
+          "venue": "Colligan Falls, Co. Waterford or Your Chosen Venue",
+          "time": "Half-Day, Full-Day, Evening Salon, or Weekend Formats",
+          "price": "Custom Quotation on Enquiry",
+          "notes": "Can include bespoke readings, guided nature/river walks, artisan dining, and signed keepsake broadsides.",
+          "bookingContact": "clodaghberesforddunnepoetry@gmail.com",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Looking for an unforgettable cultural experience for a private group, visiting university programme, literary society, or special occasion? Clodagh designs tailor-made events that weave together intimate poetry readings, guided creative reflection, local heritage in Dungarvan and the Colligan valley, and warm Irish hospitality.",
+        "bullets": [
+          "Custom-designed half-day, full-day, or weekend retreats for private writing groups or visiting universities",
+          "Intimate evening poetry salons combining live readings, conversation, and local food",
+          "Bespoke creative workshops for cultural tourism, wellness retreats, and professional teams",
+          "Optional commemorative signed broadsides or framed poems for guests"
+        ],
+        "photos": [
+          {
+            "src": "/images/gallery/michael-d-higgins.jpg",
+            "caption": "Bloomsday 2019 — Clodagh with President of Ireland, Michael D. Higgins"
+          },
+          {
+            "src": "/images/gallery/edna-obrien.jpg",
+            "caption": "Florence Hall, London — with Edna O’Brien DBE"
+          },
+          {
+            "src": "/images/gallery/dromineer.jpg",
+            "caption": "Intimate evening reading at Dromineer Literary Festival"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "She domesticates genius.",
+            "author": "Thomas McCarthy",
+            "role": "Poet"
+          },
+          {
+            "quote": "I am certain that Clodagh Beresford Dunne is one of the great up and coming poets of our times.",
+            "author": "Dr. Melanie Almeder",
+            "role": "John P. Fishwick Professor of English, Roanoke College, Virginia, USA"
+          }
+        ],
+        "bookingEmail": "clodaghberesforddunnepoetry@gmail.com",
+        "bookingSubject": "TAILOR MADE EVENT ENQUIRY"
+      }
+    ]
+  },
+  {
+    "id": "one-to-one-consultations",
+    "slug": "one-to-one-consultations",
+    "title": "One-to-One Consultations",
+    "shortTitle": "One-to-One Consultations",
+    "tagline": "Individual poetry mentoring, line-by-line manuscript critique, and competition/journal submission guidance.",
+    "intro": "Work directly with Clodagh in confidential one-to-one sessions—either in person in Dungarvan or online via Zoom—to develop individual poems, shape a pamphlet or full collection, or prepare applications for awards and literary journals.",
+    "items": [
+      {
+        "id": "individual-poetry-mentoring",
+        "title": "One-to-One Poetry Mentoring & Manuscript Appraisal",
+        "advert": {
+          "colorTheme": "violet",
+          "badge": "INDIVIDUAL MENTORING",
+          "heading": "ONE-TO-ONE POETRY CONSULTATIONS",
+          "subheading": "MANUSCRIPT CRITIQUE, MENTORING & EDITORIAL FEEDBACK",
+          "facilitator": "with CLODAGH BERESFORD DUNNE",
+          "level": "Emerging & Established Poets",
+          "date": "Flexible Scheduling (In-Person or Online via Zoom)",
+          "venue": "Dungarvan, Co. Waterford or Online Worldwide",
+          "time": "60-Minute Consultation + Advance Written Markup",
+          "price": "Enquire for Single Session or 3-Session Mentoring Package",
+          "notes": "Up to 6 poems (max 200 lines) reviewed in depth per consultation with detailed written annotations.",
+          "bookingContact": "clodaghberesforddunnepoetry@gmail.com",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Having served as adjudicator for the Listowel Writers’ Week National Pigott Poetry Prize and published widely in Poetry (Chicago), The Irish Times, Poetry Ireland Review, and The Stinging Fly, Clodagh offers rigorous, encouraging editorial feedback tailored to your voice and ambitions.",
+        "bullets": [
+          "Close line-by-line editorial markup on up to 6 poems prior to your live session",
+          "60-minute one-to-one discussion focusing on form, lineation, music, title, and emotional precision",
+          "Strategic advice on submitting to literary journals, competitions, and Arts Council bursaries",
+          "Available as a single intensive appraisal or an ongoing mentoring series"
+        ],
+        "photos": [
+          {
+            "src": "/images/site/clodagh-portrait.jpg",
+            "caption": "One-to-one mentoring in person or online"
+          },
+          {
+            "src": "/images/site/contact-book.jpg",
+            "caption": "Detailed line-by-line manuscript feedback"
+          },
+          {
+            "src": "/images/gallery/eavan-boland.jpg",
+            "caption": "Irish Book Awards Irish Poem of the Year Winner"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Here is a brilliant writer. She is a young poet with an old soul. By that I mean she has ancient wisdom and thrust but also a modern, searching, brave sensibility. Clodagh Beresford Dunne is a writer in love with language.",
+            "author": "Edna O’Brien DBE",
+            "role": "Author"
+          }
+        ],
+        "bookingEmail": "clodaghberesforddunnepoetry@gmail.com",
+        "bookingSubject": "ONE-TO-ONE CONSULTATION ENQUIRY"
+      }
+    ]
+  },
+  {
+    "id": "commissions",
+    "slug": "commissions",
+    "title": "Commissions",
+    "shortTitle": "Commissions",
+    "tagline": "Bespoke commissioned poems for milestone occasions, public institutions, memorials, weddings, and cultural projects.",
+    "intro": "Commission an original poem by Irish Poem of the Year winner Clodagh Beresford Dunne—crafted to honour a life, mark a milestone celebration, or respond to an artwork, exhibition, or public space.",
+    "items": [
+      {
+        "id": "bespoke-poem-commissions",
+        "title": "Personal, Cultural & Institutional Poetry Commissions",
+        "advert": {
+          "colorTheme": "amber",
+          "badge": "BESPOKE COMMISSIONS",
+          "heading": "COMMISSION AN ORIGINAL POEM",
+          "subheading": "FOR MILESTONES, MEMORIALS, EXHIBITIONS & PUBLIC INSTITUTIONS",
+          "facilitator": "BY CLODAGH BERESFORD DUNNE",
+          "level": "Private Individuals, Galleries, Festivals & Civic Bodies",
+          "date": "Lead Time Typically 3–6 Weeks",
+          "venue": "Delivered Worldwide as Archival Signed Print or Framed Edition",
+          "time": "Includes Initial Consultation Conversation",
+          "price": "Quotation Based on Scope",
+          "notes": "Every private commission includes a consultation with Clodagh and a signed archival presentation copy.",
+          "bookingContact": "clodaghberesforddunnepoetry@gmail.com",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Whether responding to a visual artist’s work (such as ‘This Dragonfly Emerges’ for The Old Market House Gallery) or honouring a deeply personal family milestone, wedding, christening, or remembrance, Clodagh works closely with commissioners to create an enduring work of art.",
+        "bullets": [
+          "Personal consultation (by phone, Zoom, or in person) to gather stories, details, and tone",
+          "An original poem composed specifically for your occasion, loved one, or cultural project",
+          "Presented as a signed, hand-finished archival broadside or framed limited edition",
+          "Available for galleries, civic commemorations, festivals, and private family milestones"
+        ],
+        "photos": [
+          {
+            "src": "/images/site/contact-book.jpg",
+            "caption": "Archival presentation of commissioned poetry"
+          },
+          {
+            "src": "/images/gallery/michael-d-higgins.jpg",
+            "caption": "Clodagh Beresford Dunne with President Michael D. Higgins"
+          },
+          {
+            "src": "/images/site/clodagh-portrait.jpg",
+            "caption": "Clodagh in her Dungarvan library"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Clodagh Beresford Dunne domesticates genius.",
+            "author": "Thomas McCarthy",
+            "role": "Poet"
+          }
+        ],
+        "bookingEmail": "clodaghberesforddunnepoetry@gmail.com",
+        "bookingSubject": "POETRY COMMISSION ENQUIRY"
+      }
+    ]
+  },
+  {
+    "id": "readings-public-speaking-interviews-bookings",
+    "slug": "readings-public-speaking-interviews-bookings",
+    "title": "Readings, Public Speaking, Interviews & Bookings",
+    "shortTitle": "Readings, Speaking & Bookings",
+    "tagline": "Festival readings, university guest lectures, keynote addresses, prize adjudication, and broadcast interviews.",
+    "intro": "A LAMDA Gold Medallist, two-time Irish representative at the World Universities Debating Championships (including Princeton University), and seasoned international reader across Ireland, the UK, and American universities.",
+    "items": [
+      {
+        "id": "readings-lectures-and-speaking",
+        "title": "Literary Festivals, University Lectures, Keynotes & Media Bookings",
+        "advert": {
+          "colorTheme": "slate",
+          "badge": "READINGS & PUBLIC SPEAKING",
+          "heading": "READINGS, LECTURES & SPEAKING BOOKINGS",
+          "subheading": "FESTIVALS, UNIVERSITIES, PRIZE ADJUDICATION & BROADCAST",
+          "facilitator": "CLODAGH BERESFORD DUNNE",
+          "level": "Literary Festivals, Universities, Conferences & Media",
+          "date": "Accepting Bookings for 2026 / 2027",
+          "venue": "Ireland, UK, USA & International / Online",
+          "time": "Readings, Guest Lectures, Panels & Adjudication",
+          "price": "Standard Festival / University / Broadcast Fees",
+          "notes": "Past appearances include AWP Washington DC, Monmouth University, Roanoke College, Florence Hall London & Dromineer Literary Festival.",
+          "bookingContact": "clodaghberesforddunnepoetry@gmail.com",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Clodagh has given acclaimed readings and lectures on her work in Ireland, the UK, and at several universities across the United States. Combining legal training, championship debating eloquence, and deep poetic craft, she is an engaging speaker for festival stages, university visiting writer series, radio/podcast interviews, and national competition adjudication.",
+        "bullets": [
+          "Public poetry readings and in-conversation events at literary and arts festivals",
+          "University guest lectures and Visiting Writer seminars (Ireland, UK & USA)",
+          "Literary prize adjudication (past adjudicator of the Listowel Writers’ Week National Pigott Poetry Prize)",
+          "Keynote speeches, panel moderation, and radio, television, or podcast interviews"
+        ],
+        "photos": [
+          {
+            "src": "/images/gallery/awp-washington.jpg",
+            "caption": "AWP Book Fair Poetry Reading, Washington DC"
+          },
+          {
+            "src": "/images/gallery/dromineer.jpg",
+            "caption": "Reading at Dromineer Literary Festival"
+          },
+          {
+            "src": "/images/gallery/edna-obrien.jpg",
+            "caption": "Florence Hall, London — with Edna O’Brien DBE"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Her passion and commitment to poetry is infectious. In addition to her talent as a writer, Clodagh Beresford Dunne is an ambassador of poetry and literature.",
+            "author": "Professor Michael Paul Thomas",
+            "role": "Director, Visiting Writers’ Series, Monmouth University, New Jersey, USA"
+          },
+          {
+            "quote": "I am certain that Clodagh Beresford Dunne is one of the great up and coming poets of our times.",
+            "author": "Dr. Melanie Almeder",
+            "role": "John P. Fishwick Professor of English, Roanoke College, Virginia, USA"
+          }
+        ],
+        "bookingEmail": "clodaghberesforddunnepoetry@gmail.com",
+        "bookingSubject": "READING OR SPEAKING BOOKING"
+      }
+    ]
+  }
+]
+

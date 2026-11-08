@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --bg-paper: #ecebe9;
+  --ink: #1a1918;
+  --ink-muted: #4a4744;
+  --gold-accent: #9a7b38;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-paper);
+  background-image: linear-gradient(
+      rgba(238, 237, 234, 0.84),
+      rgba(238, 237, 234, 0.88)
+    ),
+    url("/images/site/paper-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: var(--ink);
+  font-family: var(--font-serif), Georgia, "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Polygon card clip matching the original Poems cards */
+.poem-card-polygon {
+  clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
+}
+
+/* Diamond portrait clip matching Home hero */
+.diamond-portrait {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* Manuscript sheet styling matching Ford Galaxy & Cordgrass */
+.manuscript-sheet {
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+

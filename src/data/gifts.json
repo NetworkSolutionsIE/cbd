@@ -1,0 +1,166 @@
+[
+  {
+    "id": "framed-signed-limited-edition-poems",
+    "slug": "framed-signed-limited-edition-poems",
+    "categoryTitle": "Framed Signed Limited Edition Poems",
+    "shortTitle": "Framed Signed Poems",
+    "tagline": "Museum-grade archival prints of Clodagh’s most beloved poems, individually numbered, signed, and bespoke-framed.",
+    "description": "Each limited edition poem is printed on heavyweight archival cotton rag paper, hand-signed and numbered by Clodagh Beresford Dunne, and presented in a handcrafted frame ready to hang or gift.",
+    "items": [
+      {
+        "id": "framed-seven-sugar-cubes",
+        "title": "‘Seven Sugar Cubes’ — Framed Signed Limited Edition",
+        "subtitle": "Irish Book Awards — Irish Poem of the Year Winner",
+        "price": "€145",
+        "edition": "Signed & Numbered Limited Edition • Bespoke Hardwood Frame",
+        "description": "An archival fine-art presentation of ‘Seven Sugar Cubes’ (voted Irish Poem of the Year at the Irish Book Awards), typeset in classic left-aligned literary serif on museum-grade cotton rag paper and signed by the poet. Optional personal dedication inscription available on request.",
+        "features": [
+          "Individually hand-signed and numbered by Clodagh Beresford Dunne",
+          "Printed on 310gsm acid-free archival cotton rag paper",
+          "Conservation mount and solid wood frame (choice of black, natural oak, or warm white)",
+          "Optional handwritten dedication on the reverse or accompanying gift card"
+        ],
+        "poemPreview": "“...drive the winter miles to your / father’s field, where you know his horses will run to / the rattle, like dice, of seven sugar cubes.”",
+        "poemSlug": "seven-sugar-cubes",
+        "inStock": true
+      },
+      {
+        "id": "framed-the-bulbs-he-planted",
+        "title": "‘The Bulbs He Planted’ — Framed Signed Limited Edition",
+        "subtitle": "First Published in The High Window",
+        "price": "€125",
+        "edition": "Signed & Numbered Limited Edition • Bespoke Hardwood Frame",
+        "description": "A deeply moving gift of remembrance and consolation (‘When in June his alliums / surprise you from the soil... Now the triumphant globes / link this earth to heaven’), hand-signed and framed to gallery standard.",
+        "features": [
+          "Hand-signed and numbered limited edition print",
+          "Ideal commemorative or bereavement gift",
+          "Archival cotton paper with UV-protective glazing",
+          "Carefully packaged for tracked shipping across Ireland and internationally"
+        ],
+        "poemPreview": "“When in June his alliums / surprise you from the soil / it’s as if the spheres / are suspended from above...”",
+        "poemSlug": "the-bulbs-he-planted",
+        "inStock": true
+      },
+      {
+        "id": "framed-custom-choice",
+        "title": "Your Choice of Poem — Framed Signed Limited Edition",
+        "subtitle": "Any Published Poem from the Repository",
+        "price": "€135",
+        "edition": "Custom Bespoke Framed Edition • Signed by the Poet",
+        "description": "Select any poem from Clodagh’s published work—including ‘Ford Galaxy’, ‘Cordgrass’, ‘Brother’, ‘Chocolate Advent Calendar’, ‘Morning With Four Children’, or ‘At The Wall Near The Road’—to be archivals-printed, hand-signed, and framed to order.",
+        "features": [
+          "Choose any of the 19 poems in the online repository",
+          "Set in Clodagh’s exact authorial typography and stanza layout",
+          "Hand-signed with optional personal inscription",
+          "Bespoke framing included"
+        ],
+        "poemPreview": "Select your favourite poem when ordering and include any personal dedication instructions.",
+        "poemSlug": "ford-galaxy",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "signed-broadsides",
+    "slug": "signed-broadsides",
+    "categoryTitle": "Signed Broadsides",
+    "shortTitle": "Signed Broadsides",
+    "tagline": "Unframed collector’s poetry broadsides printed on fine heavy laid paper and hand-signed by the poet.",
+    "description": "Steeped in the Irish literary tradition of collectible broadsheets, these unframed signed prints are ready for your own framing or presentation folder.",
+    "items": [
+      {
+        "id": "broadside-seven-sugar-cubes",
+        "title": "‘Seven Sugar Cubes’ — Signed Collector’s Broadside",
+        "subtitle": "Unframed Archival Broadside (A4 / A3)",
+        "price": "€65",
+        "edition": "Hand-Signed Archival Broadside on Heavy Cotton Paper",
+        "description": "Unframed fine-press style broadside of Clodagh’s award-winning poem ‘Seven Sugar Cubes’, printed on textured cream archival paper and signed in ink by the author.",
+        "features": [
+          "Hand-signed by Clodagh Beresford Dunne",
+          "Heavyweight 300gsm textured archival paper",
+          "Standard framing dimensions for effortless custom framing",
+          "Shipped flat in rigid conservation board packaging"
+        ],
+        "poemPreview": "“Does the news melt into you and cool to the image of / his remains in a Tasmanian Blackwood coffin...”",
+        "poemSlug": "seven-sugar-cubes",
+        "inStock": true
+      },
+      {
+        "id": "broadside-cordgrass-or-choice",
+        "title": "Signed Poetry Broadside — Your Choice of Poem",
+        "subtitle": "‘Cordgrass’, ‘Ford Galaxy’, ‘One Hazard of a Messy Home’ & More",
+        "price": "€60",
+        "edition": "Hand-Signed Unframed Broadside",
+        "description": "Order an unframed, hand-signed broadside of any poem from Clodagh’s collection—preserving the exact visual and spatial typography of works like ‘Cordgrass’, ‘Ford Galaxy’, and ‘One Hazard of a Messy Home’.",
+        "features": [
+          "Available for any poem in the collection",
+          "True-to-manuscript left-aligned and spatial serif typesetting",
+          "Signed and dated by the poet (personal dedication optional)",
+          "Worldwide protective flat shipping"
+        ],
+        "poemPreview": "“In the vastness of Scarborough Marsh / the Great Blue Heron patiently waits on one leg...”",
+        "poemSlug": "cordgrass",
+        "inStock": true
+      }
+    ]
+  },
+  {
+    "id": "gift-tokens",
+    "slug": "gift-tokens",
+    "categoryTitle": "Gift Tokens",
+    "shortTitle": "Gift Tokens",
+    "tagline": "Give the gift of poetry: redeemable against retreats, workshops, one-to-one consultations, student courses, or signed editions.",
+    "description": "Presented as a beautifully printed and hand-signed gift voucher (posted in a presentation envelope or emailed for instant gifting), Gift Tokens can be redeemed against any of Clodagh’s courses, full-day retreats, workshops, mentoring sessions, or limited-edition prints.",
+    "items": [
+      {
+        "id": "gift-token-full-day-workshop-retreat",
+        "title": "Full-Day Retreat or Poetry Workshop Gift Token",
+        "subtitle": "Covers 1 Full-Day Workshop or Retreat Place (Lunch Included)",
+        "price": "€150",
+        "edition": "Presentation Gift Voucher (Posted or Digital PDF)",
+        "description": "Treat a writer or poetry lover in your life to a full-day poetry workshop or creative writing retreat with Clodagh at Colligan Falls, Co. Waterford (including morning coffee, afternoon tea, lunch, and written follow-up feedback).",
+        "features": [
+          "Redeemable against any Full-Day Poetry Workshop or Adult Creative Writing Retreat",
+          "Valid for 24 months from date of issue",
+          "Sent as a hand-signed luxury card by post or instant printable PDF",
+          "Includes space for your personal gift message"
+        ],
+        "poemPreview": "“I write words – and help others find theirs.”",
+        "inStock": true
+      },
+      {
+        "id": "gift-token-one-to-one-mentoring",
+        "title": "One-to-One Poetry Consultation Gift Token",
+        "subtitle": "60-Minute Individual Mentoring + Written Poem Markup",
+        "price": "€120",
+        "edition": "Presentation Gift Voucher (In-Person or Zoom)",
+        "description": "An ideal gift for an emerging or practicing poet: a private 60-minute mentoring consultation with Clodagh Beresford Dunne (online via Zoom or in Dungarvan), including detailed advance editorial notes on up to 6 poems.",
+        "features": [
+          "Redeemable for an in-person or online 1-to-1 consultation",
+          "Includes close written appraisal of up to 6 poems",
+          "Valid for 24 months",
+          "Posted gift card or immediate digital delivery"
+        ],
+        "poemPreview": "Personalised editorial guidance from an Irish Poem of the Year winner.",
+        "inStock": true
+      },
+      {
+        "id": "gift-token-custom-amount",
+        "title": "Bespoke Gift Token (€50 / €75 / €100 / Custom Value)",
+        "subtitle": "Redeemable Across All Courses, Workshops, Consultations & Framed Poems",
+        "price": "From €50",
+        "edition": "Flexible Value Gift Voucher",
+        "description": "Choose any denomination from €50 upwards to put towards Leaving Certificate Friday sessions, adult retreats, framed signed limited edition poems, broadsides, or private commissions.",
+        "features": [
+          "Available in €50, €75, €100, €150, or any custom amount",
+          "Redeemable across every offering in ‘Work With Me’ and ‘Buy & Gifts’",
+          "Handwritten presentation card posted or emailed directly",
+          "No expiry hassle — flexible booking dates"
+        ],
+        "poemPreview": "Redeemable towards any course, workshop, consultation, or signed print.",
+        "inStock": true
+      }
+    ]
+  }
+]
+
