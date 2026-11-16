@@ -481,7 +481,7 @@ function CheckoutContent() {
               <label className="block font-sans text-xs font-bold uppercase tracking-wider text-stone-700">
                 {selectedItem?.itemType === "course"
                   ? "Participant / Student Notes (Optional)"
-                  : "Personal Dedication / Framing Choice / Gift Message (Optional)"}
+                  : "Frame Finish / Notes (Optional)"}
               </label>
               <textarea
                 rows={3}
@@ -490,7 +490,7 @@ function CheckoutContent() {
                 placeholder={
                   selectedItem?.itemType === "course"
                     ? "E.g. student name, Higher/Ordinary Level, preferred January workshop date (Sat 23rd or Sun 24th Jan), or dietary requirements..."
-                    : "E.g. 'For Sarah on her graduation', preferred frame finish (black, natural oak, or warm white), or recipient name for Gift Token..."
+                    : "E.g. preferred frame finish (black, natural oak, or warm white), or recipient name for a Gift Token..."
                 }
                 className="mt-1 w-full rounded-xs border border-stone-300 px-3 py-2 text-sm text-stone-900"
               />
@@ -589,7 +589,7 @@ function CheckoutContent() {
                 <span>
                   {selectedItem?.itemType === "course"
                     ? "Your place is reserved upon payment and Clodagh will email you full course details and directions."
-                    : "Personally hand-signed by Clodagh Beresford Dunne in Dungarvan, Co. Waterford and carefully packaged."}
+                    : "Hand-signed by Clodagh Beresford Dunne and carefully packaged."}
                 </span>
               </div>
               <div className="flex items-start gap-2.5">

@@ -56,6 +56,14 @@ export interface OfferingItem {
   bookingEmail: string;
   bookingPhone?: string;
   bookingSubject: string;
+  /** Full-width stripe across the listing, e.g. "Almost Full" */
+  banner?: { text: string; tone: "amber" | "red" };
+  /** Show the online "Book & Pay" PayPal button (requires a numeric € price) */
+  payOnline?: boolean;
+  /** Label for the enquiry button (default "Enquire / Book") */
+  ctaLabel?: string;
+  /** Turns the enquiry button into "Join Waiting List" */
+  waitingList?: boolean;
 }
 
 export interface OfferingCategory {
@@ -79,6 +87,8 @@ export interface GiftItem {
   poemPreview: string;
   poemSlug?: string;
   inStock: boolean;
+  /** Stripe shown when not in stock, e.g. "Sold out at the moment" */
+  statusLabel?: string;
 }
 
 export interface GiftCategory {
@@ -135,7 +145,7 @@ export function getAllPurchasableItems(): PurchasableCatalogItem[] {
   for (const cat of getOfferingCategories()) {
     for (const item of cat.items) {
       const priceNum = parsePriceEur(item.advert.price);
-      if (priceNum !== null) {
+      if (priceNum !== null && item.payOnline) {
         results.push({
           id: item.id,
           title: item.title,
@@ -152,7 +162,7 @@ export function getAllPurchasableItems(): PurchasableCatalogItem[] {
   for (const cat of getGiftCategories()) {
     for (const item of cat.items) {
       const priceNum = parsePriceEur(item.price);
-      if (priceNum !== null) {
+      if (priceNum !== null && item.inStock !== false) {
         const lowerTitle = item.title.toLowerCase();
         results.push({
           id: item.id,

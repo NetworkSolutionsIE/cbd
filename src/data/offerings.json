@@ -4,12 +4,12 @@
     "slug": "adult-courses-retreats",
     "title": "Adult Courses & Retreats",
     "shortTitle": "Adult Courses & Retreats",
-    "tagline": "Immersive creative writing and poetry retreats in the tranquil surroundings of Colligan, Co. Waterford.",
+    "tagline": "Immersive creative writing courses and full-day retreats in the tranquil surroundings of Colligan, Co. Waterford.",
     "intro": "Designed for emerging and experienced adult writers alike, Clodagh’s courses and full-day retreats combine close reading of contemporary poetry, generative writing exercises, and supportive seminar-style workshopping in an intimate, capped group setting.",
     "items": [
       {
         "id": "creative-writing-full-day-retreat",
-        "title": "Creative Writing & Poetry Full-Day Retreat",
+        "title": "Creative Writing Full-Day Retreat",
         "advert": {
           "colorTheme": "amber",
           "badge": "ADULT COURSE & RETREAT",
@@ -17,7 +17,7 @@
           "subheading": "“FINDING THE LINE & THE VOICE”",
           "facilitator": "with POET, CLODAGH BERESFORD DUNNE",
           "level": "ALL LEVELS WELCOME (BEGINNER TO ADVANCED)",
-          "date": "Spring / Autumn Seasonal Dates (Enquire for Next Available Date)",
+          "date": "Saturday 6th February 2027 — the next full-day creative writing retreat",
           "venue": "Colligan Falls, Dungarvan, Co. Waterford (X35 YC66)",
           "time": "9:30 am (for a 10:00 am sharp start) to 5:00 pm",
           "price": "€150 pp",
@@ -25,25 +25,48 @@
           "bookingContact": "clodaghberesford@yahoo.com (Subject: ADULT RETREAT)",
           "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
         },
-        "longDescription": "Step away from daily demands for a restorative day of reading, writing, and conversation beside the Colligan River. With over 16 years of experience teaching adults, university students, and writers, Clodagh guides participants through carefully curated prompts and contemporary texts to unlock new poems and sharpen editorial instincts.",
+        "longDescription": "A restorative day of reading, writing and conversation beside the Colligan River, with guided prompts and supportive feedback in a small group.",
         "bullets": [
-          "Generate fresh drafts through structured morning writing prompts and sensory exercises",
-          "Close-read landmark contemporary poems from Ireland, the UK, and America",
-          "Workshop work-in-progress in a warm, constructive group (strictly capped at 7 writers)",
-          "Receive individual written follow-up notes and reading recommendations after the retreat"
+          "Fresh drafts from guided morning writing prompts",
+          "Close reading of contemporary writing",
+          "Supportive group feedback (capped at 7 writers)"
         ],
         "photos": [
           {
-            "src": "/images/offerings/colligan-seminar-table-1.jpg",
-            "caption": "The seminar table in Colligan, Co. Waterford set for a small-group course"
+            "src": "/images/offerings/retreat/full-day-retreat-06.jpg",
+            "caption": "The Colligan River, a short walk from the writing room"
           },
           {
-            "src": "/images/offerings/colligan-refreshments-1.jpg",
-            "caption": "Homemade baking and refreshments prepared for retreat participants"
+            "src": "/images/offerings/retreat/full-day-retreat-07.jpg",
+            "caption": "Writers at work around the table in Colligan"
           },
           {
-            "src": "/images/gallery/carlow-workshop.jpg",
-            "caption": "Clodagh facilitating a round-table adult poetry seminar"
+            "src": "/images/offerings/retreat/full-day-retreat-10.jpg",
+            "caption": "The retreat handout and writing notes"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-01.jpg",
+            "caption": "The table laid for lunch at Colligan"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-12.jpg",
+            "caption": "Place settings ready for retreat participants"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-04.jpg",
+            "caption": "Home-cooked lunch spread"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-08.jpg",
+            "caption": "Home baking and refreshments through the day"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-09.jpg",
+            "caption": "Fresh fruit and granola pots for morning break"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-02.jpg",
+            "caption": "A homemade dessert to finish the day"
           }
         ],
         "testimonials": [
@@ -59,7 +82,99 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "ADULT RETREAT ENQUIRY"
+        "bookingSubject": "ADULT RETREAT ENQUIRY",
+        "payOnline": false,
+        "ctaLabel": "Enquire / Book"
+      },
+      {
+        "id": "start-to-write-course",
+        "title": "“Start to Write” Creative Writing Course",
+        "advert": {
+          "colorTheme": "emerald",
+          "badge": "NEW COURSE",
+          "heading": "START TO WRITE",
+          "subheading": "A 1½-DAY CREATIVE WRITING COURSE",
+          "facilitator": "with CLODAGH BERESFORD DUNNE",
+          "level": "ALL LEVELS WELCOME",
+          "date": "Dates to be confirmed — enquire for details",
+          "venue": "Venue to be confirmed",
+          "time": "1½ days (full details to follow)",
+          "price": "€500",
+          "notes": "Dates and final details to be confirmed.",
+          "bookingContact": "clodaghberesford@yahoo.com (Subject: START TO WRITE)",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "A new 1½-day creative writing course for anyone who wants to start writing. Dates and full details will be announced shortly — enquire to register your interest.",
+        "bullets": [
+          "A new 1½-day course",
+          "Dates and final details to be confirmed",
+          "Enquire now to register your interest"
+        ],
+        "photos": [
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-07.jpg",
+            "caption": "Writers at work around the table in Colligan"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-06.jpg",
+            "caption": "The Colligan River"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-10.jpg",
+            "caption": "Course handouts and notes"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Her passion and commitment to poetry is infectious. In addition to her talent as a writer, Clodagh Beresford Dunne is an ambassador of poetry and literature.",
+            "author": "Professor Michael Paul Thomas",
+            "role": "Director, Visiting Writers’ Series, Monmouth University, New Jersey, USA"
+          }
+        ],
+        "bookingEmail": "clodaghberesford@yahoo.com",
+        "bookingSubject": "START TO WRITE COURSE ENQUIRY",
+        "payOnline": false,
+        "ctaLabel": "Enquire"
+      },
+      {
+        "id": "writing-for-wellbeing",
+        "title": "Writing for Wellbeing",
+        "advert": {
+          "colorTheme": "sky",
+          "badge": "COMING SOON",
+          "heading": "WRITING FOR WELLBEING",
+          "subheading": "CREATIVE WRITING FOR WELLBEING",
+          "facilitator": "with CLODAGH BERESFORD DUNNE",
+          "level": "ALL WELCOME",
+          "date": "Dates to be confirmed — enquire for details",
+          "venue": "Venue to be confirmed",
+          "time": "Details to follow",
+          "price": "Price on enquiry",
+          "notes": "Coming soon — to coincide with an upcoming feature in Irish Country Magazine.",
+          "bookingContact": "clodaghberesford@yahoo.com (Subject: WRITING FOR WELLBEING)",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "Writing for Wellbeing is coming soon, and ties in with an upcoming feature in Irish Country Magazine. Dates and details will be confirmed shortly — enquire to be kept informed.",
+        "bullets": [
+          "Coming soon — to coincide with the Irish Country Magazine feature",
+          "Dates and details to be confirmed",
+          "Enquire now to be kept informed"
+        ],
+        "photos": [
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-06.jpg",
+            "caption": "The Colligan River"
+          },
+          {
+            "src": "/images/offerings/retreat/full-day-retreat-07.jpg",
+            "caption": "Writing together in Colligan"
+          }
+        ],
+        "testimonials": [],
+        "bookingEmail": "clodaghberesford@yahoo.com",
+        "bookingSubject": "WRITING FOR WELLBEING ENQUIRY",
+        "payOnline": false,
+        "ctaLabel": "Enquire"
       }
     ]
   },
@@ -103,12 +218,8 @@
             "caption": "The Colligan workshop room prepared for close reading and craft discussion"
           },
           {
-            "src": "/images/offerings/lc-course-whiteboard.jpg",
-            "caption": "Workshop whiteboard: ‘Seeing the Poem as a House’ & Adrienne Rich"
-          },
-          {
-            "src": "/images/gallery/carlow-workshop.jpg",
-            "caption": "Intimate seminar-style poetry workshopping"
+            "src": "/images/offerings/poetry-books.jpg",
+            "caption": "A few of the poetry books we read from"
           }
         ],
         "testimonials": [
@@ -124,7 +235,13 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "JANUARY POETRY WORKSHOP"
+        "bookingSubject": "JANUARY POETRY WORKSHOP",
+        "banner": {
+          "text": "Almost Full",
+          "tone": "amber"
+        },
+        "payOnline": true,
+        "ctaLabel": "Enquire / Book"
       }
     ]
   },
@@ -146,11 +263,11 @@
           "subheading": "FORTNIGHTLY FRIDAY SESSIONS",
           "facilitator": "WITH AWARD-WINNING POET, CLODAGH BERESFORD DUNNE",
           "level": "Higher & Ordinary Levels — Comprehensive Notes Provided",
-          "date": "COMMENCING FRIDAY 6th NOVEMBER, 2026",
+          "date": "Fully booked — more sessions coming in February. Join the waiting list",
           "venue": "Colligan, Dungarvan, Co. Waterford",
-          "time": "3:00 pm – 5:00 pm",
-          "price": "€50 pp",
-          "notes": "Notes Provided / H & O Levels / Numbers strictly limited.",
+          "time": "3:00 pm – 5:00 pm (more dates & times to be announced)",
+          "price": "€80 pp",
+          "notes": "Notes provided / H & O Levels / Numbers strictly limited. Further sessions — including an early-evening session and Saturday mornings — to be announced shortly.",
           "bookingContact": "Text or WhatsApp 086 8629283 | clodaghberesforddunnepoet.com",
           "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
         },
@@ -177,14 +294,6 @@
           {
             "src": "/images/offerings/lc-course-registration-desk.jpg",
             "caption": "Student registration forms and curated poetry anthologies on the study desk"
-          },
-          {
-            "src": "/images/offerings/colligan-refreshments-2.jpg",
-            "caption": "Homemade chocolate chip cookies and refreshments for Friday afternoon students"
-          },
-          {
-            "src": "/images/offerings/school-visit-2.jpg",
-            "caption": "Clodagh teaching Unseen Poetry to Leaving Certificate students"
           }
         ],
         "testimonials": [
@@ -196,17 +305,23 @@
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
         "bookingPhone": "086 8629283",
-        "bookingSubject": "LEAVING CERT FORTNIGHTLY FRIDAYS"
+        "bookingSubject": "LEAVING CERT ENGLISH",
+        "banner": {
+          "text": "Fully booked — more coming in February, join the waiting list",
+          "tone": "red"
+        },
+        "waitingList": true,
+        "payOnline": false
       }
     ]
   },
   {
     "id": "group-school-visits",
     "slug": "group-school-visits",
-    "title": "Group & School Visits",
-    "shortTitle": "Group & School Visits",
+    "title": "School & Community Visits",
+    "shortTitle": "School & Community Visits",
     "tagline": "Inspiring in-school workshops, Creative Writing Club sessions, and Leaving Cert masterclasses across Ireland.",
-    "intro": "Clodagh visits primary and secondary schools, libraries, active retirement groups, and literary societies to deliver lively, tailored poetry readings, generative writing workshops, and exam-focused Unseen Poetry masterclasses.",
+    "intro": "Clodagh visits secondary schools, libraries, active retirement groups, and literary societies to deliver lively, tailored poetry readings, generative writing workshops, and exam-focused Unseen Poetry masterclasses.",
     "items": [
       {
         "id": "school-and-group-poetry-visits",
@@ -217,7 +332,7 @@
           "heading": "GROUP & SCHOOL POETRY VISITS",
           "subheading": "CREATIVE WRITING CLUBS & UNSEEN POETRY MASTERCLASSES",
           "facilitator": "with AWARD-WINNING POET, CLODAGH BERESFORD DUNNE",
-          "level": "Primary, Transition Year, Leaving Cert & Adult Community Groups",
+          "level": "Transition Year, Leaving Cert & Adult Community Groups",
           "date": "Half-Day & Full-Day School Bookings Available Year-Round",
           "venue": "On-site at Your School, Library, or Cultural Venue",
           "time": "Tailored to School Timetable (Single Class, Half-Day, or Full-Day)",
@@ -235,12 +350,12 @@
         ],
         "photos": [
           {
-            "src": "/images/offerings/school-visit-1.jpg",
-            "caption": "Creative Writing Club workshop at Ardscoil na Mara, Tramore"
-          },
-          {
             "src": "/images/offerings/school-visit-2.jpg",
             "caption": "Leaving Certificate Unseen Poetry seminar at Ardscoil na Mara"
+          },
+          {
+            "src": "/images/offerings/school-visit-1.jpg",
+            "caption": "Creative Writing Club workshop at Ardscoil na Mara, Tramore"
           },
           {
             "src": "/images/gallery/carlow-workshop.jpg",
@@ -260,7 +375,54 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "SCHOOL OR GROUP VISIT ENQUIRY"
+        "bookingSubject": "SCHOOL OR GROUP VISIT ENQUIRY",
+        "ctaLabel": "Enquire",
+        "payOnline": false
+      },
+      {
+        "id": "transition-year-full-day",
+        "title": "Transition Year Full-Day Programme",
+        "advert": {
+          "colorTheme": "emerald",
+          "badge": "TRANSITION YEAR",
+          "heading": "TRANSITION YEAR FULL-DAY",
+          "subheading": "NEW IN THE NEW YEAR",
+          "facilitator": "with AWARD-WINNING POET, CLODAGH BERESFORD DUNNE",
+          "level": "Transition Year Groups",
+          "date": "Enquire for dates (new year)",
+          "venue": "On-site at Your School",
+          "time": "Full day, tailored to your school timetable",
+          "price": "Enquire for school rates",
+          "notes": "A full-day Transition Year option is being introduced in the new year — enquire for dates.",
+          "bookingContact": "clodaghberesford@yahoo.com (Subject: TRANSITION YEAR FULL DAY)",
+          "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
+        },
+        "longDescription": "A full-day creative writing programme for Transition Year students, introduced in the new year. Enquire for dates.",
+        "bullets": [
+          "Full-day option for Transition Year groups",
+          "Available from the new year — enquire for dates"
+        ],
+        "photos": [
+          {
+            "src": "/images/offerings/school-visit-1.jpg",
+            "caption": "Creative Writing Club workshop at Ardscoil na Mara, Tramore"
+          },
+          {
+            "src": "/images/offerings/school-visit-2.jpg",
+            "caption": "Seminar at Ardscoil na Mara"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Clodagh Beresford-Dunne, award-winning Co. Waterford poet, visited the school on Wednesday. She inspired our Creative Writing Club with writing prompts, and she gave a workshop on unseen poetry to Leaving Cert students.",
+            "author": "Ardscoil na Mara (@ardscoilnamara)",
+            "role": "Tramore, Co. Waterford"
+          }
+        ],
+        "bookingEmail": "clodaghberesford@yahoo.com",
+        "bookingSubject": "TRANSITION YEAR FULL-DAY ENQUIRY",
+        "payOnline": false,
+        "ctaLabel": "Enquire for Dates"
       }
     ]
   },
@@ -285,7 +447,7 @@
           "date": "Custom Dates by Arrangement",
           "venue": "Colligan Falls, Co. Waterford or Your Chosen Venue",
           "time": "Half-Day, Full-Day, Evening Salon, or Weekend Formats",
-          "price": "Custom Quotation on Enquiry",
+          "price": "Custom quotation on enquiry",
           "notes": "Can include bespoke readings, guided nature/river walks, artisan dining, and signed keepsake broadsides.",
           "bookingContact": "clodaghberesford@yahoo.com",
           "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
@@ -309,6 +471,30 @@
           {
             "src": "/images/gallery/dromineer.jpg",
             "caption": "Intimate evening reading at Dromineer Literary Festival"
+          },
+          {
+            "src": "/images/gallery/eavan-boland.jpg",
+            "caption": "At the Irish Book Awards with Eavan Boland"
+          },
+          {
+            "src": "/images/offerings/festival/festival-of-food-01.jpg",
+            "caption": "Festival of Food 2026 — hosting at Colligan"
+          },
+          {
+            "src": "/images/offerings/festival/festival-of-food-10.jpg",
+            "caption": "Festival of Food 2026 — Clodagh at the lectern"
+          },
+          {
+            "src": "/images/offerings/festival/festival-of-food-08.jpg",
+            "caption": "Festival of Food 2026 — reading to guests at the long table"
+          },
+          {
+            "src": "/images/offerings/festival/festival-of-food-05.jpg",
+            "caption": "Festival of Food 2026 — the festival programme at Colligan"
+          },
+          {
+            "src": "/images/offerings/festival/festival-of-food-03.jpg",
+            "caption": "Festival of Food 2026 — the grazing table"
           }
         ],
         "testimonials": [
@@ -324,7 +510,9 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "TAILOR MADE EVENT ENQUIRY"
+        "bookingSubject": "TAILOR MADE EVENT ENQUIRY",
+        "ctaLabel": "Enquire",
+        "payOnline": false
       }
     ]
   },
@@ -346,10 +534,10 @@
           "subheading": "MANUSCRIPT CRITIQUE, MENTORING & EDITORIAL FEEDBACK",
           "facilitator": "with CLODAGH BERESFORD DUNNE",
           "level": "Emerging & Established Poets",
-          "date": "Flexible Scheduling (In-Person or Online via Zoom)",
+          "date": "Bookings currently full — join the waiting list",
           "venue": "Dungarvan, Co. Waterford or Online Worldwide",
           "time": "60-Minute Consultation + Advance Written Markup",
-          "price": "Enquire for Single Session or 3-Session Mentoring Package",
+          "price": "Waiting list",
           "notes": "Up to 6 poems (max 200 lines) reviewed in depth per consultation with detailed written annotations.",
           "bookingContact": "clodaghberesford@yahoo.com",
           "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
@@ -367,10 +555,6 @@
             "caption": "One-to-one mentoring in person in Dungarvan or online"
           },
           {
-            "src": "/images/offerings/colligan-seminar-table-1.jpg",
-            "caption": "Quiet consultation and seminar table in Colligan, Co. Waterford"
-          },
-          {
             "src": "/images/gallery/eavan-boland.jpg",
             "caption": "Irish Book Awards Irish Poem of the Year Winner"
           }
@@ -383,42 +567,48 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "ONE-TO-ONE CONSULTATION ENQUIRY"
+        "bookingSubject": "ONE-TO-ONE CONSULTATION ENQUIRY",
+        "banner": {
+          "text": "Booked out — bookings are full right now, please join a waiting list",
+          "tone": "red"
+        },
+        "waitingList": true,
+        "payOnline": false
       }
     ]
   },
   {
     "id": "commissions",
     "slug": "commissions",
-    "title": "Commissions",
-    "shortTitle": "Commissions",
-    "tagline": "Bespoke commissioned poems for milestone occasions, public institutions, memorials, weddings, and cultural projects.",
-    "intro": "Commission an original poem by Irish Poem of the Year winner Clodagh Beresford Dunne—crafted to honour a life, mark a milestone celebration, or respond to an artwork, exhibition, or public space.",
+    "title": "Cultural & Institutional Poetry Commissions",
+    "shortTitle": "Cultural & Institutional Commissions",
+    "tagline": "Commissioned poems for exhibitions, public institutions, galleries, festivals, and cultural projects.",
+    "intro": "Commission an original poem by Irish Poem of the Year winner Clodagh Beresford Dunne in response to an exhibition, artwork, public space, or institutional occasion.",
     "items": [
       {
         "id": "bespoke-poem-commissions",
-        "title": "Personal, Cultural & Institutional Poetry Commissions",
+        "title": "Cultural & Institutional Poetry Commissions",
         "advert": {
           "colorTheme": "amber",
-          "badge": "BESPOKE COMMISSIONS",
+          "badge": "CULTURAL & INSTITUTIONAL COMMISSIONS",
           "heading": "COMMISSION AN ORIGINAL POEM",
-          "subheading": "FOR MILESTONES, MEMORIALS, EXHIBITIONS & PUBLIC INSTITUTIONS",
+          "subheading": "FOR EXHIBITIONS, PUBLIC INSTITUTIONS & CULTURAL PROJECTS",
           "facilitator": "BY CLODAGH BERESFORD DUNNE",
-          "level": "Private Individuals, Galleries, Festivals & Civic Bodies",
-          "date": "Lead Time Typically 3–6 Weeks",
+          "level": "Galleries, Festivals, Public Institutions & Civic Bodies",
+          "date": "By arrangement",
           "venue": "Delivered Worldwide as Archival Signed Print or Framed Edition",
           "time": "Includes Initial Consultation Conversation",
-          "price": "Quotation Based on Scope",
-          "notes": "Every private commission includes a consultation with Clodagh and a signed archival presentation copy.",
+          "price": "Quotation based on scope / Enquire within",
+          "notes": "Every commission includes a consultation with Clodagh and a signed archival presentation copy.",
           "bookingContact": "clodaghberesford@yahoo.com",
           "emblemImage": "/images/offerings/book-leaves-emblem.jpg"
         },
-        "longDescription": "Whether responding to a visual artist’s work (such as ‘This Dragonfly Emerges’ for The Old Market House Gallery) or honouring a deeply personal family milestone, wedding, christening, or remembrance, Clodagh works closely with commissioners to create an enduring work of art.",
+        "longDescription": "Whether responding to a visual artist’s work (such as ‘This Dragonfly Emerges’ for The Old Market House Gallery) or marking a public or institutional occasion, Clodagh works closely with commissioners to create an enduring work of art.",
         "bullets": [
-          "Personal consultation (by phone, Zoom, or in person) to gather stories, details, and tone",
-          "An original poem composed specifically for your occasion, loved one, or cultural project",
+          "Consultation (by phone, Zoom, or in person) to understand the project and its tone",
+          "An original poem composed for your exhibition, institution, or cultural project",
           "Presented as a signed, hand-finished archival broadside or framed limited edition",
-          "Available for galleries, civic commemorations, festivals, and private family milestones"
+          "Available for galleries, public institutions, civic commemorations, and festivals"
         ],
         "photos": [
           {
@@ -442,7 +632,9 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "POETRY COMMISSION ENQUIRY"
+        "bookingSubject": "CULTURAL / INSTITUTIONAL COMMISSION ENQUIRY",
+        "ctaLabel": "Enquire",
+        "payOnline": false
       }
     ]
   },
@@ -506,9 +698,10 @@
           }
         ],
         "bookingEmail": "clodaghberesford@yahoo.com",
-        "bookingSubject": "READING OR SPEAKING BOOKING"
+        "bookingSubject": "READING OR SPEAKING BOOKING",
+        "ctaLabel": "Enquiries / Book Now",
+        "payOnline": false
       }
     ]
   }
 ]
-

@@ -20,14 +20,16 @@ const ENQUIRY_CATEGORIES = [
   "Group / School Visit Enquiry",
   "Tailor Made Event Enquiry",
   "One-to-One Consultation",
-  "Poem Commission",
+  "Cultural / Institutional Poem Commission",
   "Buy & Gifts (Framed Poem / Broadside / Gift Token)",
   "Reading / Public Speaking / Media Booking",
+  "Waiting List",
   "General Enquiry",
 ];
 
 function inferCategory(subject: string, offering: string): string {
   const combined = `${subject} ${offering}`.toLowerCase();
+  if (combined.includes("waiting list")) return "Waiting List";
   if (combined.includes("workshop")) return "Poetry Workshop Booking";
   if (combined.includes("leaving cert") || combined.includes("friday"))
     return "School Student Course (Leaving Cert)";
@@ -38,7 +40,7 @@ function inferCategory(subject: string, offering: string): string {
   if (combined.includes("tailor")) return "Tailor Made Event Enquiry";
   if (combined.includes("consultation") || combined.includes("one-to-one"))
     return "One-to-One Consultation";
-  if (combined.includes("commission")) return "Poem Commission";
+  if (combined.includes("commission")) return "Cultural / Institutional Poem Commission";
   if (
     combined.includes("framed") ||
     combined.includes("broadside") ||

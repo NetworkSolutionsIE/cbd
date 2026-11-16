@@ -23,7 +23,7 @@
   },
   "about": {
     "paragraphs": [
-      "Award-winning Irish Poet, Clodagh Beresford Dunne was born in Dublin in 1975 and raised in the harbour town of Dungarvan, Co. Waterford, in the southeast of Ireland. She grew up in a local newspaper family (‘The Dungarvan Observer’, a weekly broadsheet having been founded by her great-grandfather, James A. Lynch, in 1912). During her childhood, her grandfather P.J. Lynch was editor of the newspaper, and both of her parents worked alongside him. Her writing was first published in the ‘Dungarvan Observer’ when she was 8 years old.",
+      "Award-winning Irish Poet, Clodagh Beresford Dunne was born in Dublin in 1975 and raised in the harbour town of Dungarvan, Co. Waterford, in the southeast of Ireland. She grew up in a local newspaper family (‘The Dungarvan Observer’, a weekly broadsheet founded by her great-grandfather, James A. Lynch, in 1912). During her childhood, her grandfather P.J. Lynch was editor of the newspaper, and both of her parents worked alongside him. Her writing was first published in the ‘Dungarvan Observer’ when she was 8 years old.",
       "She was educated in the Presentation Convent, Dungarvan and in Rockwell College Cashel and earned degrees in English and in Law from University College Galway (1995 and 1997 respectively). She apprenticed and practised as a qualified solicitor in Dublin from 1998 to 2005, receiving her parchment from the Law Society of Ireland in the Long Vacation of 2000. During her university and training years, she was an award-winning public speaker and debater (LAMDA Gold Medal recipient), was a finalist in the Irish Times Debating Competition and represented Ireland on two occasions at the World Universities Debating Championships, including at Princeton University.",
       "Her poems have been published in outlets including The Irish Times, Poetry Magazine (Chicago), Poetry Ireland Review, The Stinging Fly, The Moth, Southword, The London Magazine, Poetry Salzburg Review, The Woven Tale Press (New York), The High Window, 14 Magazine, Magma, and Cordite (Australia). The Arts Council of Ireland has awarded her its Emerging Writer Award, its Agility Award and a Travel and Training Award. She was the winner of The Irish Book Awards Irish Poem of the Year Award for ‘Seven Sugar Cubes’ and, at the request of Edna O’Brien DBE, she received the 2019 Arts Council of England’s Clarissa Luard Emerging Writer Award.",
       "Clodagh has given readings and lectures on her work in Ireland, the UK and in several universities in the USA; she served as adjudicator for the Listowel Writers’ Week National Pigott Poetry Prize, and she has taught Creative Writing and Poetry to school students, university students, and adults for over 16 years."
@@ -193,13 +193,23 @@
       "ctaLink": "/work-with-me/poetry-workshops"
     },
     {
+      "id": "feb-2027-retreat",
+      "date": "Saturday 6th February, 2027",
+      "category": "Adult Retreat",
+      "title": "Creative Writing Full-Day Retreat",
+      "location": "Colligan Falls, Dungarvan, Co. Waterford (X35 YC66)",
+      "summary": "The next full-day creative writing retreat: guided writing prompts, close reading and supportive feedback in a small group, with lunch included (€150 pp).",
+      "ctaText": "Enquire / Book",
+      "ctaLink": "/work-with-me/adult-courses-retreats"
+    },
+    {
       "id": "nov-2026-leaving-cert",
-      "date": "Commencing Friday 6th November, 2026 (3:00 pm – 5:00 pm)",
+      "date": "Fully booked — more sessions coming in February",
       "category": "School Student Course",
       "title": "Leaving Certificate English — Fortnightly Friday Sessions",
       "location": "Colligan, Dungarvan, Co. Waterford",
-      "summary": "Fortnightly two-hour sessions covering Paper 1 (The Essay: ideas, structure, technique) and Paper 2 (Prescribed & Unseen Poetry: analysis, personal response, quote recall, vocabulary expansion). Higher & Ordinary Levels, full notes provided (€50 pp).",
-      "ctaText": "View Student Course & Book",
+      "summary": "Fortnightly two-hour Friday sessions covering Paper 1 (The Essay) and Paper 2 (Prescribed & Unseen Poetry), Higher & Ordinary Levels, full notes provided (€80 pp). The November sessions are fully booked — more are coming in February, so join the waiting list. Further dates and times to be announced.",
+      "ctaText": "Join the Waiting List",
       "ctaLink": "/work-with-me/school-student-courses-retreats"
     },
     {
@@ -224,4 +234,3 @@
     }
   ]
 }
-

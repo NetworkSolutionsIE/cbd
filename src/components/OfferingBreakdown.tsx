@@ -68,9 +68,32 @@ export default function OfferingBreakdown({ item }: { item: OfferingItem }) {
   const theme = THEME_STYLES[item.advert.colorTheme] || THEME_STYLES.sky;
   const isDarkPoster = item.advert.colorTheme === "slate";
   const priceEur = parsePriceEur(item.advert.price);
+  const showPay = Boolean(item.payOnline) && priceEur !== null;
+  const enquireLabel = item.waitingList
+    ? "Join Waiting List"
+    : item.ctaLabel || "Enquire / Book";
+  const enquireSubject = item.waitingList
+    ? `WAITING LIST: ${item.bookingSubject}`
+    : item.bookingSubject;
+  const photoCols =
+    (item.photos?.length ?? 0) >= 3
+      ? "sm:grid-cols-3"
+      : (item.photos?.length ?? 0) === 2
+      ? "sm:grid-cols-2"
+      : "sm:grid-cols-1";
 
   return (
-    <article className="rounded-sm border border-stone-300/90 bg-white/95 p-6 shadow-md sm:p-10">
+    <article className="overflow-hidden rounded-sm border border-stone-300/90 bg-white/95 p-6 shadow-md sm:p-10">
+      {item.banner && (
+        <div
+          role="status"
+          className={`-mx-6 -mt-6 mb-8 px-6 py-2.5 text-center font-sans text-xs font-bold uppercase tracking-[0.2em] text-white sm:-mx-10 sm:-mt-10 sm:px-10 ${
+            item.banner.tone === "red" ? "bg-[#9b2c2c]" : "bg-[#b7791f]"
+          }`}
+        >
+          {item.banner.text}
+        </div>
+      )}
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
         {/* PART 1: COLOUR-CODED ADVERT POSTER (Left 5 Columns) */}
         <div className="lg:col-span-5">
@@ -183,7 +206,7 @@ export default function OfferingBreakdown({ item }: { item: OfferingItem }) {
                 {item.title}
               </h2>
               <div className="flex flex-wrap items-center gap-3">
-                {priceEur !== null && (
+                {showPay && (
                   <Link
                     href={`/checkout?item=${encodeURIComponent(item.id)}`}
                     className="inline-flex items-center gap-2 rounded-full bg-[#0070ba] px-6 py-2.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-xs transition hover:bg-[#003087]"
@@ -194,11 +217,11 @@ export default function OfferingBreakdown({ item }: { item: OfferingItem }) {
                 )}
                 <Link
                   href={`/contact?subject=${encodeURIComponent(
-                    item.bookingSubject
+                    enquireSubject
                   )}&offering=${encodeURIComponent(item.title)}`}
                   className="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-2.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-xs transition hover:bg-[#9a7b38]"
                 >
-                  <span>{priceEur !== null ? "Enquire / Book" : "Book Now"}</span>
+                  <span>{enquireLabel}</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
                 {item.bookingPhone && (
@@ -242,7 +265,7 @@ export default function OfferingBreakdown({ item }: { item: OfferingItem }) {
               <h4 className="mb-3 font-sans text-xs font-bold uppercase tracking-widest text-stone-500">
                 Photos &amp; Moments
               </h4>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div className={`grid grid-cols-1 gap-4 ${photoCols}`}>
                 {item.photos.map((photo, idx) => (
                   <figure
                     key={idx}
