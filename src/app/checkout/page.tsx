@@ -19,6 +19,7 @@ import {
   getSiteData,
   PurchasableCatalogItem,
 } from "@/lib/content";
+import { IS_STATIC_EXPORT, createOrderStatic } from "@/lib/staticApi";
 
 declare global {
   interface Window {
@@ -69,7 +70,9 @@ function CheckoutContent() {
       : null
   );
 
-  const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
+  const paypalClientId = IS_STATIC_EXPORT
+    ? undefined // inline PayPal buttons need server routes; static build uses PayPal's hosted checkout
+    : process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
   const paypalContainerRef = useRef<HTMLDivElement | null>(null);
   const [sdkLoaded, setSdkLoaded] = useState(false);
 
@@ -220,6 +223,23 @@ function CheckoutContent() {
     setErrorMsg(null);
 
     try {
+      if (IS_STATIC_EXPORT) {
+        // Static hosting: save the order straight to Convex, then go to PayPal
+        const result = await createOrderStatic({
+          itemId: selectedItem.id,
+          unitPriceEur: effectiveUnitPrice,
+          quantity,
+          customerName,
+          customerEmail,
+          customerPhone: customerPhone.trim() || undefined,
+          shippingAddress: shippingAddress.trim() || undefined,
+          poemChoice: selectedItem.allowPoemChoice ? poemChoice : undefined,
+          dedicationNotes: dedicationNotes.trim() || undefined,
+        });
+        window.location.href = result.paypalCheckoutUrl;
+        return;
+      }
+
       const res = await fetch("/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

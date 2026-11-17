@@ -5,7 +5,8 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { CheckCircle2, ArrowRight, Mail, Printer } from "lucide-react";
 import { getSiteData } from "@/lib/content";
-import type { OrderRecord } from "@/app/api/orders/route";
+import { IS_STATIC_EXPORT } from "@/lib/staticApi";
+import type { OrderRecord } from "@/lib/types";
 
 function CheckoutSuccessContent() {
   const searchParams = useSearchParams();
@@ -19,7 +20,9 @@ function CheckoutSuccessContent() {
 
   useEffect(() => {
     async function confirmAndLoad() {
-      if (!orderId) {
+      if (!orderId || IS_STATIC_EXPORT) {
+        // Static hosting has no server to verify/mark payment: Clodagh confirms
+        // the payment from her PayPal receipt email instead.
         setLoading(false);
         return;
       }
@@ -75,6 +78,12 @@ function CheckoutSuccessContent() {
             .
           </p>
         </div>
+
+        {IS_STATIC_EXPORT && orderId && (
+          <p className="mt-6 rounded-xs border border-stone-200 bg-[#faf9f6] p-4 text-center font-sans text-xs font-bold uppercase tracking-wider text-stone-600">
+            Order Reference: {orderId}
+          </p>
+        )}
 
         {!loading && order && (
           <div className="mt-8 space-y-4 rounded-xs border border-stone-200 bg-[#faf9f6] p-6 text-sm">

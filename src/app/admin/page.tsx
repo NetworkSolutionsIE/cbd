@@ -31,8 +31,8 @@ import {
   GiftCategory,
   Poem,
 } from "@/lib/content";
-import type { SubmissionRecord } from "@/app/api/submissions/route";
-import type { OrderRecord } from "@/app/api/orders/route";
+import type { SubmissionRecord, OrderRecord } from "@/lib/types";
+
 
 export default function AdminStudioPage() {
   // Authentication State

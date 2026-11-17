@@ -4,27 +4,10 @@ import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { getSiteData } from "@/lib/content";
 import { isAdminAuthenticated } from "@/lib/adminAuth";
+import { adminKey } from "@/lib/convexAdmin";
 
-export interface OrderRecord {
-  _id: string;
-  itemId: string;
-  itemTitle: string;
-  itemType: "course" | "gift";
-  unitPriceEur: number;
-  quantity: number;
-  totalEur: number;
-  customerName: string;
-  customerEmail: string;
-  customerPhone?: string;
-  shippingAddress?: string;
-  poemChoice?: string;
-  dedicationNotes?: string;
-  paypalOrderId?: string;
-  paypalReceiverEmail: string;
-  paymentMethod: "paypal_sdk" | "paypal_standard";
-  status: "pending_payment" | "paid" | "fulfilled" | "cancelled";
-  createdAt: string;
-}
+import type { OrderRecord } from "@/lib/types";
+export type { OrderRecord };
 
 function getConvexClient(): ConvexHttpClient | null {
   const url = process.env.NEXT_PUBLIC_CONVEX_URL;
@@ -44,6 +27,7 @@ export async function GET(request: Request) {
   try {
     if (id) {
       const order = await convex.query(api.orders.getById, {
+        adminKey: adminKey(),
         id: id as Id<"orders">,
       });
       return NextResponse.json({ configured: true, order });
@@ -54,7 +38,7 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const items = await convex.query(api.orders.list, {});
+    const items = await convex.query(api.orders.list, { adminKey: adminKey() });
     return NextResponse.json({
       configured: true,
       items,
@@ -240,7 +224,8 @@ export async function PATCH(request: Request) {
     }
 
     await convex.mutation(api.orders.updateStatus, {
-      id: id as Id<"orders">,
+      adminKey: adminKey(),
+        id: id as Id<"orders">,
       status,
       paypalOrderId,
     });
@@ -276,7 +261,8 @@ export async function DELETE(request: Request) {
     }
 
     await convex.mutation(api.orders.remove, {
-      id: id as Id<"orders">,
+      adminKey: adminKey(),
+        id: id as Id<"orders">,
     });
 
     return NextResponse.json({ ok: true });

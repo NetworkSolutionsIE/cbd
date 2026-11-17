@@ -12,6 +12,7 @@ import {
   Loader2,
 } from "lucide-react";
 import { getSiteData } from "@/lib/content";
+import { IS_STATIC_EXPORT, submitEnquiryStatic } from "@/lib/staticApi";
 
 const ENQUIRY_CATEGORIES = [
   "Poetry Workshop Booking",
@@ -88,23 +89,39 @@ function ContactFormContent() {
     setErrorMsg(null);
 
     try {
-      const res = await fetch("/api/submissions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name,
-          email,
-          phone: phone.trim() || undefined,
-          category,
-          subject,
-          offering: initialOffering || undefined,
-          message,
-        }),
-      });
+      const payload = {
+        name,
+        email,
+        phone: phone.trim() || undefined,
+        category,
+        subject,
+        offering: initialOffering || undefined,
+        message,
+      };
 
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error(data.error || "Could not submit your message.");
+      let data: {
+        recipientEmail?: string;
+        emailSent?: boolean;
+        backend?: string;
+      };
+
+      if (IS_STATIC_EXPORT) {
+        // Static hosting: save straight to Convex from the browser
+        data = await submitEnquiryStatic(payload);
+      } else {
+        const res = await fetch("/api/submissions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        data = await res.json();
+        if (!res.ok) {
+          throw new Error(
+            (data as { error?: string }).error ||
+              "Could not submit your message."
+          );
+        }
       }
 
       setSubmittedData({

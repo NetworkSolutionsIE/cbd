@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as adminGuard from "../adminGuard.js";
 import type * as orders from "../orders.js";
 import type * as submissions from "../submissions.js";
 
@@ -18,6 +19,7 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  adminGuard: typeof adminGuard;
   orders: typeof orders;
   submissions: typeof submissions;
 }>;

@@ -1,0 +1,6 @@
+[
+  { "source": "/home", "destination": "/" },
+  { "source": "/courses", "destination": "/work-with-me/adult-courses-retreats" },
+  { "source": "/workshops", "destination": "/work-with-me/poetry-workshops" },
+  { "source": "/new-page", "destination": "/testimonials" }
+]

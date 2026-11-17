@@ -100,6 +100,7 @@ export default function Footer() {
               <p className="text-xs text-stone-600">
                 Location: {site.location}
               </p>
+              {process.env.NEXT_PUBLIC_STATIC_EXPORT !== "1" && (
               <div className="pt-3">
                 <Link
                   href="/admin"
@@ -108,6 +109,7 @@ export default function Footer() {
                   Manage Site Content (Admin Studio)
                 </Link>
               </div>
+              )}
             </div>
           </div>
         </div>

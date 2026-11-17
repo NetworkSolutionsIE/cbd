@@ -4,24 +4,12 @@ import fs from "fs/promises";
 import path from "path";
 import { getSiteData } from "@/lib/content";
 import { isAdminAuthenticated } from "@/lib/adminAuth";
+import { adminKey } from "@/lib/convexAdmin";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 
-export interface SubmissionRecord {
-  _id: string;
-  name: string;
-  email: string;
-  phone?: string;
-  category: string;
-  subject: string;
-  offering?: string;
-  message: string;
-  recipientEmail: string;
-  status: "new" | "read" | "replied" | "archived";
-  emailSent: boolean;
-  createdAt: string;
-  storageBackend?: "convex" | "local";
-}
+import type { SubmissionRecord } from "@/lib/types";
+export type { SubmissionRecord };
 
 const LOCAL_SUBMISSIONS_PATH = path.join(
   process.cwd(),
@@ -145,7 +133,7 @@ export async function GET() {
     try {
       const items = (await convex.query(
         api.submissions.list,
-        {}
+        { adminKey: adminKey() }
       )) as SubmissionRecord[];
       return NextResponse.json({
         backend: "convex",
@@ -303,6 +291,7 @@ export async function PATCH(request: Request) {
     if (convex && !id.startsWith("sub-")) {
       try {
         await convex.mutation(api.submissions.updateStatus, {
+          adminKey: adminKey(),
           id: id as Id<"submissions">,
           status,
         });
@@ -343,6 +332,7 @@ export async function DELETE(request: Request) {
     if (convex && !id.startsWith("sub-")) {
       try {
         await convex.mutation(api.submissions.remove, {
+          adminKey: adminKey(),
           id: id as Id<"submissions">,
         });
         return NextResponse.json({ ok: true, backend: "convex" });

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "../../../../../convex/_generated/api";
 import { Id } from "../../../../../convex/_generated/dataModel";
+import { adminKey } from "@/lib/convexAdmin";
 
 const PAYPAL_BASE_URL =
   process.env.PAYPAL_MODE === "sandbox"
@@ -69,6 +70,7 @@ export async function POST(request: Request) {
     if (convexOrderId && process.env.NEXT_PUBLIC_CONVEX_URL) {
       const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL);
       await convex.mutation(api.orders.updateStatus, {
+        adminKey: adminKey(),
         id: convexOrderId as Id<"orders">,
         status: "paid",
         paypalOrderId,

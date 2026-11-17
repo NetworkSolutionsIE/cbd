@@ -1,5 +1,6 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
+import { assertAdminKey } from "./adminGuard";
 
 export const create = mutation({
   args: {
@@ -38,23 +39,27 @@ export const create = mutation({
 });
 
 export const list = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminKey: v.string() },
+  handler: async (ctx, args) => {
+    assertAdminKey(args.adminKey);
     return await ctx.db.query("orders").order("desc").take(200);
   },
 });
 
 export const getById = query({
   args: {
+    adminKey: v.string(),
     id: v.id("orders"),
   },
   handler: async (ctx, args) => {
+    assertAdminKey(args.adminKey);
     return await ctx.db.get(args.id);
   },
 });
 
 export const updateStatus = mutation({
   args: {
+    adminKey: v.string(),
     id: v.id("orders"),
     status: v.union(
       v.literal("pending_payment"),
@@ -65,6 +70,7 @@ export const updateStatus = mutation({
     paypalOrderId: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    assertAdminKey(args.adminKey);
     const patch: {
       status: "pending_payment" | "paid" | "fulfilled" | "cancelled";
       paypalOrderId?: string;
@@ -79,9 +85,11 @@ export const updateStatus = mutation({
 
 export const remove = mutation({
   args: {
+    adminKey: v.string(),
     id: v.id("orders"),
   },
   handler: async (ctx, args) => {
+    assertAdminKey(args.adminKey);
     await ctx.db.delete(args.id);
     return { ok: true };
   },
