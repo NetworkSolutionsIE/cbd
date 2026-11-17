@@ -92,3 +92,4 @@ export async function isAdminAuthenticated(): Promise<{
   const verified = verifyAdminSessionToken(token);
   return { authenticated: verified.valid, email: verified.email };
 }
+
