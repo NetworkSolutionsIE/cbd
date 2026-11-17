@@ -83,7 +83,10 @@ export default function OfferingBreakdown({ item }: { item: OfferingItem }) {
       : "sm:grid-cols-1";
 
   return (
-    <article className="overflow-hidden rounded-sm border border-stone-300/90 bg-white/95 p-6 shadow-md sm:p-10">
+    <article
+      id={item.id}
+      className="scroll-mt-28 overflow-hidden rounded-sm border border-stone-300/90 bg-white/95 p-6 shadow-md sm:p-10"
+    >
       {item.banner && (
         <div
           role="status"
