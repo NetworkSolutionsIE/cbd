@@ -121,7 +121,7 @@ export default function OfferingBreakdown({ item }: { item: OfferingItem }) {
                     <img
                       src={item.advert.emblemImage}
                       alt={item.advert.heading}
-                      className="h-36 w-48 object-cover"
+                      className="h-44 w-44 object-cover"
                     />
                   </div>
                 </div>
