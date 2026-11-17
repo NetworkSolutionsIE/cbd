@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X, Sparkles, ShoppingBag } from "lucide-react";
-import { getOfferingCategories, getGiftCategories } from "@/lib/content";
+import { getOfferingCategories, getGiftCategories, featuredOfferingLinks } from "@/lib/content";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -106,6 +106,15 @@ export default function Navbar() {
                       className="block px-4 py-2 text-[13.5px] uppercase tracking-wide text-stone-700 transition hover:bg-stone-100/80 hover:text-stone-950"
                     >
                       {cat.title}
+                    </Link>
+                  ))}
+                  {featuredOfferingLinks.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      className="block border-t border-stone-100 px-4 py-2 text-[13.5px] uppercase tracking-wide text-[#785a1e] transition hover:bg-stone-100/80 hover:text-stone-950"
+                    >
+                      {l.label}
                     </Link>
                   ))}
                 </div>
@@ -261,6 +270,16 @@ export default function Navbar() {
                     className="py-0.5 hover:text-stone-950"
                   >
                     {cat.title}
+                  </Link>
+                ))}
+                {featuredOfferingLinks.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="py-0.5 text-[#785a1e] hover:text-stone-950"
+                  >
+                    {l.label}
                   </Link>
                 ))}
               </div>

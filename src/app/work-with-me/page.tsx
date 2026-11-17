@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Sparkles, ArrowRight } from "lucide-react";
-import { getOfferingCategories } from "@/lib/content";
+import { getOfferingCategories, featuredOfferingLinks } from "@/lib/content";
 import OfferingBreakdown from "@/components/OfferingBreakdown";
 
 export const metadata = {
@@ -40,6 +40,15 @@ export default function WorkWithMeIndexPage() {
             className="rounded-full border border-stone-400/80 bg-white/90 px-4 py-2 font-sans text-xs font-semibold uppercase tracking-wider text-stone-800 shadow-2xs transition hover:border-stone-900 hover:bg-stone-900 hover:text-white"
           >
             {cat.title}
+          </Link>
+        ))}
+        {featuredOfferingLinks.map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            className="rounded-full border border-[#9a7b38] bg-[#fdfaf3] px-4 py-2 font-sans text-xs font-semibold uppercase tracking-wider text-[#785a1e] shadow-2xs transition hover:bg-[#9a7b38] hover:text-white"
+          >
+            {l.label}
           </Link>
         ))}
       </div>

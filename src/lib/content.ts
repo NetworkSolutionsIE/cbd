@@ -119,6 +119,14 @@ export const getGiftCategoryBySlug = (slug: string): GiftCategory | undefined =>
 
 export const getSiteData = () => siteData;
 
+/** Extra shortcut links shown alongside the Work With Me categories (pills + menus). */
+export const featuredOfferingLinks: { label: string; href: string }[] = [
+  {
+    label: "Writing for Wellbeing",
+    href: "/work-with-me/adult-courses-retreats#writing-for-wellbeing",
+  },
+];
+
 export interface PurchasableCatalogItem {
   id: string;
   title: string;

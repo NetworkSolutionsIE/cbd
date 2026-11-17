@@ -5,6 +5,7 @@ import { ArrowLeft, Sparkles } from "lucide-react";
 import {
   getOfferingCategories,
   getOfferingCategoryBySlug,
+  featuredOfferingLinks,
 } from "@/lib/content";
 import OfferingBreakdown from "@/components/OfferingBreakdown";
 
@@ -65,6 +66,15 @@ export default async function OfferingCategoryPage({
             </Link>
           );
         })}
+        {featuredOfferingLinks.map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            className="rounded-full border border-[#9a7b38] bg-[#fdfaf3] px-4 py-1.5 font-sans text-xs font-semibold uppercase tracking-wider text-[#785a1e] transition hover:bg-[#9a7b38] hover:text-white"
+          >
+            {l.label}
+          </Link>
+        ))}
       </div>
 
       {/* Category Header */}
